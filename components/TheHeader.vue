@@ -21,37 +21,37 @@ const changeTheme = (color: string) => {
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 left-0 z-30 border-b-2 border-orange-500 bg-white bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA] p-[6px] px-6 py-3 shadow-xl sm:py-4"
+    class="fixed inset-x-0 top-0 left-0 border-b-2 border-orange-500 bg-white py-3 shadow-xl dark:bg-gray-800 sm:py-3"
   >
-    <div class="container mx-auto flex items-center justify-between">
+    <!-- bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]  -->
+    <div
+      class="container mx-auto flex items-center justify-between px-10 sm:px-0"
+    >
       <div class="flex items-center">
         <NuxtLink
           :to="{ name: 'index' }"
-          class="space-x-2 rounded-full px-2 py-0.5 text-xl font-bold hover:text-white sm:px-4 sm:py-2"
+          class="space-x-2 rounded-full px-2 py-0.5 text-xl font-bold hover:text-orange-500 dark:text-white sm:px-4 sm:py-2"
         >
-          <span class="hidden sm:inline-flex">{{
-            globalStore.app.name.short
-          }}</span>
-          <span class="sm:hidden">{{ globalStore.app.name.short }}</span>
+          <span class="">{{ globalStore.app.name.short }}</span>
         </NuxtLink>
-        <ul class="ml-20 flex items-center space-x-10">
+      </div>
+      <div class="flex items-center space-x-10">
+        <ul class="ml-20 hidden items-center space-x-10 text-sm sm:flex">
           <li>
             <NuxtLink
-              :to="{ name: 'design' }"
-              class="font-medium hover:text-white"
+              :to="{ name: 'designs' }"
+              class="font-medium hover:text-orange-500 dark:text-white"
               >Design</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
-              :to="{ name: 'AppIdeas' }"
-              class="font-medium hover:text-white"
+              :to="{ name: 'app-ideas' }"
+              class="font-medium hover:text-orange-500 dark:text-white"
               >App Ideas</NuxtLink
             >
           </li>
         </ul>
-      </div>
-      <div class="flex items-center space-x-10">
         <div class="relative">
           <OnClickOutside @trigger="closeDialog">
             <button
@@ -59,7 +59,7 @@ const changeTheme = (color: string) => {
               @click="toggleDialog"
               class="flex items-center"
             >
-              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-white">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -68,13 +68,13 @@ const changeTheme = (color: string) => {
                 ></path>
                 <path
                   d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                  class="fill-white dark:fill-white"
+                  class="fill-slate-400 dark:fill-white"
                 ></path>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                  class="fill-white dark:fill-white"
+                  class="fill-slate-400 dark:fill-white"
                 ></path>
               </svg>
             </button>
@@ -102,10 +102,10 @@ const changeTheme = (color: string) => {
 
         <a
           :href="globalStore.app.source"
-          class="flex items-center space-x-2 rounded bg-gray-800 px-4 py-2 font-medium text-white shadow"
+          class="flex items-center space-x-2 rounded bg-gray-800 px-4 py-2 text-xs font-medium text-white shadow hover:bg-orange-500 dark:bg-orange-500 sm:text-sm"
           target="_blank"
         >
-          <div class="hidden sm:inline-flex">Contribute</div></a
+          <div>Contribute</div></a
         >
       </div>
     </div>

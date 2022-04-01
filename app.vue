@@ -1,13 +1,7 @@
-<script setup lang="ts">
-// import { useWindowScroll } from "@vueuse/core";
-
-// const { x, y } = useWindowScroll()
-
-// const { x, y } = useMouse();
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>

@@ -1,4 +1,4 @@
-# Developer Resources 🎉 [Live](https://developer-resources.netlify.app/)
+# Developer Resources 🎉 [Live](https://devfree-resources.netlify.app)
 
 [![Stars](https://img.shields.io/github/stars/anburocky3/developer-resources)](https://github.com/anburocky3/developer-resources)
 [![Forks](https://img.shields.io/github/forks/anburocky3/developer-resources)](https://github.com/anburocky3/developer-resources)
@@ -12,9 +12,9 @@ icons, template ui, illustration, etc. Feel free to browse around.
 
 ## ⚙️ How it works?
 
-[![Design Resource Collections](./screenshots/presentation.gif)](https://developer-resources.netlify.app)
+[![Design Resource Collections](./screenshots/presentation.gif)](https://devfree-resources.netlify.app)
 
-#### ✨ Visit this website: 👉 https://developer-resources.netlify.app 🎉
+#### ✨ Visit this website: 👉 https://devfree-resources.netlify.app 🎉
 
 ---
 
