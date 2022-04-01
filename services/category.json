@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "All Products"
+  },
+  {
+    "id": 7,
+    "name": "Icons"
+  },
+  {
+    "id": 2,
+    "name": "Web App"
+  },
+  {
+    "id": 3,
+    "name": "Mobile App"
+  },
+  {
+    "id": 5,
+    "name": "Illustrations"
+  },
+  {
+    "id": 6,
+    "name": "Stock Photos"
+  }
+]

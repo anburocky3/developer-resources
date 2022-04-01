@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.0.2",
+    "@nuxtjs/eslint-config-typescript": "^9.0.0",
+    "@nuxtjs/tailwindcss": "^5.0.2",
+    "@pinia/nuxt": "^0.1.8",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "@vueuse/components": "^8.2.1",
+    "@vueuse/core": "^8.2.1",
+    "@vueuse/nuxt": "^8.2.0",
+    "eslint": "^8.12.0",
+    "nuxt3": "^3.0.0-27480376.fdd38f9",
+    "pinia": "^2.0.12",
+    "prettier": "^2.6.1",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "typescript": "^4.6.3"
+  }
+}

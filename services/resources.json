@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "category": "Web App",
+    "title": "Designresouces.io",
+    "description": "Download resources for Figma, Adobe XD etc",
+    "link": "https://designresources.io",
+    "license": "Freemium"
+  },
+  {
+    "id": 2,
+    "category": "Illustrations",
+    "title": "Streamline Illustrations",
+    "description": "Need great illustrations, but cannot find an illustrator? We've created all these vector illustrations for you.",
+    "link": "https://www.streamlinehq.com/illustrations",
+
+    "license": "Freemium"
+  },
+  {
+    "id": 3,
+    "category": "Icons",
+    "title": "tablericons.com",
+    "description": "1424 Fully customizable free SVG icons. (MIT license)",
+    "link": "https://tablericons.com/",
+    "license": "Free"
+  },
+  {
+    "id": 4,
+    "category": "Icons",
+    "title": "devicon.dev",
+    "description": "Devicon is a set of icons representing programming languages, designing, and development tools. You can use it as a font or directly copy/paste the SVG code into your project.",
+    "link": "https://devicon.dev",
+    "license": "Free"
+  },
+  {
+    "id": 5,
+    "category": "Icons",
+    "title": "devfont.com",
+    "description": "Devfont is a beautiful set of 915+ premium open source neutral-style icons elaborately crafted for designers and developers. All of the icons are free for both personal and commercial use. Made by @alexperronnet.",
+    "link": "https://devfont.com/",
+    "license": "Free"
+  },
+  {
+    "id": 6,
+    "category": "Icons",
+    "title": "svgporn.com",
+    "description": "SVG logos for developers, designers, bloggers, geeks and more",
+    "link": "https://svgporn.com/",
+    "license": "Free"
+  },
+  {
+    "id": 7,
+    "category": "Icons",
+    "title": "icones.js.org",
+    "description": "Collections of Icons from various fonts library.",
+    "link": "https://icones.js.org/",
+    "license": "Free"
+  },
+  {
+    "id": 8,
+    "category": "Icons",
+    "title": "iconmonstr.com",
+    "description": "Discover 4512+ free icons in 316 collections",
+    "link": "https://iconmonstr.com/",
+    "license": "Free"
+  },
+  {
+    "id": 9,
+    "category": "Web App",
+    "title": "UpLabs Web",
+    "description": "306,427 Templates Ready for Commercial Use / Web Templates",
+    "link": "https://www.uplabs.com/templates/web",
+    "license": "Freemium"
+  },
+  {
+    "id": 10,
+    "category": "Illustrations",
+    "title": "UpLabs Illustrations",
+    "description": "48,452 Illustrations Ready for Commercial Use",
+    "link": "https://www.uplabs.com/illustrations",
+    "license": "Freemium"
+  },
+  {
+    "id": 11,
+    "category": "Icons",
+    "title": "UpLabs Icons",
+    "description": "25,338 Icons Ready for Commercial Use",
+    "link": "https://www.uplabs.com/icons",
+    "license": "Freemium"
+  },
+  {
+    "id": 12,
+    "category": "Stock Photos",
+    "title": "pexels.com",
+    "description": "Pexels offers free stock photos and footage that you can download and use for free. With our large and diverse library, you will find the perfect photo or video for your website or blog post.",
+    "link": "www.pexels.com",
+    "license": "Freemium"
+  },
+  {
+    "id": 13,
+    "category": "Stock Photos",
+    "title": "unsplash.com",
+    "description": "Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.",
+    "link": "https://unsplash.com/",
+    "license": "Free"
+  },
+  {
+    "id": 14,
+    "category": "Stock Photos",
+    "title": "pixabay.com",
+    "description": "Find your perfect free image or video to download and use for anything. ✓ Free for commercial use ✓ No attribution required ✓ High quality images.",
+    "link": "https://pixabay.com/",
+    "license": "Free"
+  },
+  {
+    "id": 15,
+    "category": "Stock Photos",
+    "title": "stocksnap.io",
+    "description": "The best source for free, CC0, do-what-you-want-with stock photos. Browse and download thousands of copyright-free stock images. No attribution required.",
+    "link": "https://stocksnap.io/",
+    "license": "Free"
+  },
+  {
+    "id": 16,
+    "category": "Mobile App",
+    "title": "Uplabs Android",
+    "description": "306,438 Templates Ready for Commercial Use / Android Templates",
+    "link": "https://www.uplabs.com/templates/android",
+    "license": "Freemium"
+  },
+  {
+    "id": 17,
+    "category": "Mobile App",
+    "title": "Uplabs iOS",
+    "description": "306,440 Templates Ready for Commercial Use / Android Templates",
+    "link": "https://www.uplabs.com/templates/ios",
+    "license": "Freemium"
+  },
+  {
+    "id": 18,
+    "category": "Illustrations",
+    "title": "unDraw",
+    "description": "A constantly updated design project with beautiful SVG images that you can use completely free and without attribution.",
+    "link": "https://undraw.co/illustrations",
+    "license": "Free"
+  },
+  {
+    "id": 19,
+    "category": "Icons",
+    "title": "BrandEPS",
+    "description": "BrandEPS is a database of brand logos and icons. logos and icons can download in vector EPS, SVG, JPG and PNG file formats",
+    "link": "https://brandeps.com/",
+    "license": "Free"
+  }
+]
