@@ -21,7 +21,7 @@ const changeTheme = (color: string) => {
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 left-0 border-b-2 border-orange-500 bg-white py-3 shadow-xl dark:bg-gray-800 sm:py-3"
+    class="fixed z-50 inset-x-0 top-0 left-0 border-b-2 border-orange-500 bg-white py-3 shadow-xl dark:bg-gray-800 sm:py-3"
   >
     <!-- bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]  -->
     <div
