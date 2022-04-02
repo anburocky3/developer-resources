@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useStore } from '@/stores'
+import TheFooter from '@/components/TheFooter.vue'
 
 const route = useRoute()
 const globalStore = useStore()
@@ -17,18 +18,6 @@ useMeta({
       <slot />
     </main>
 
-    <footer class="bg-gray-900 p-5 text-sm text-gray-100">
-      <div
-        class="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0"
-      >
-        <span
-          >Copyright &copy; {{ new Date().getFullYear() }} -
-          <NuxtLink :to="{ name: 'index' }" class="hover:text-orange-500">{{
-            globalStore.app.name.long
-          }}</NuxtLink>
-        </span>
-        <span>- All Rights Reserved</span>
-      </div>
-    </footer>
+    <TheFooter />
   </div>
 </template>
