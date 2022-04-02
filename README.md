@@ -14,7 +14,11 @@ icons, template ui, illustration, etc. Feel free to browse around.
 
 [![Design Resource Collections](./screenshots/presentation.gif)](https://devfree-resources.netlify.app)
 
-#### ✨ Visit this website: 👉 https://devfree-resources.netlify.app 🎉
+## 🎉 Check it yourself!
+
+| 🚧 Build Status  | [![Netlify Status](https://api.netlify.com/api/v1/badges/c0db2fce-a58c-4a21-9457-217bb99cbef4/deploy-status)](https://app.netlify.com/sites/devfree-resources/deploys) |
+| ---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅ Live Website: | https://devfree-resources.netlify.app                                                                                                                                  |
 
 ---
 
