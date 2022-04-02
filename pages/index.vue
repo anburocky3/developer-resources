@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'default'
+  title: '20+ Free Developer Collections'
 })
 </script>
 
@@ -8,7 +8,6 @@ definePageMeta({
   <div>
     <!-- hero -->
     <section class="bg-red-50 py-20 dark:bg-gray-800 sm:py-32">
-      <Title>Developer Resource Collections - Learn by doing!</Title>
       <div
         class="container mx-auto flex flex-col items-center justify-around space-y-10 px-5 sm:flex-row sm:space-y-0 sm:px-0"
       >

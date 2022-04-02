@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { useStore } from '@/stores'
 
+const route = useRoute()
 const globalStore = useStore()
+
+useMeta({
+  title: computed(() => `${route.meta.title} - ${globalStore.app.name.long}`)
+})
 </script>
 
 <template>

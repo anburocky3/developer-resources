@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  title: 'Realistic App Ideas'
+})
+</script>
 
 <template>
   <div class="min-h-screen bg-gray-100 p-5 dark:bg-gray-900 sm:p-10">
-    <Title>App Ideas</Title>
     <TheHeader />
 
     <main
