@@ -33,12 +33,12 @@ const filteredResources = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-100 p-5 dark:bg-gray-900 sm:p-10">
+  <div class="min-h-screen bg-gray-100 p-5 dark:bg-gray-900 sm:px-10">
     <Title>Developer Resource Collections - Learn by doing!</Title>
     <TheHeader />
 
     <main
-      class="container mx-auto mt-20 rounded bg-white p-5 dark:bg-gray-800 dark:text-white"
+      class="container mx-auto my-10 lg:my-20 rounded bg-white p-5 dark:bg-gray-800 dark:text-white"
     >
       <section class="my-10 space-y-10 text-center">
         <div class="space-y-3">
@@ -59,13 +59,14 @@ const filteredResources = computed(() => {
             class="w-16 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
           >
             <span class="hidden sm:inline-flex">Search</span>
+            <svg class="sm:hidden" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"></path></svg>
           </button>
         </div>
       </section>
 
       <!-- cards -->
       <div class="mx-auto w-full space-y-10 sm:max-w-6xl sm:p-10">
-        <div class="space-x-0 space-y-4 text-center sm:space-x-5 sm:space-y-0">
+        <div class="space-x-0 space-y-4 text-center sm:space-x-5 xl:space-y-0">
           <ChipList
             v-for="productCategory in categoryWithCount"
             :key="productCategory.id"
@@ -74,7 +75,7 @@ const filteredResources = computed(() => {
             :title="productCategory.name"
           />
         </div>
-        <div class="grid grid-cols-1 gap-10 sm:grid-cols-4">
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <CardsResourceCard
             v-for="resource in filteredResources"
             :key="resource.id"
