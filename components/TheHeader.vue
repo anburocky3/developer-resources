@@ -26,6 +26,7 @@ const changeTheme = (color: string) => {
 }
 const changeLang = (lang: string) => {
   i18n.locale.value = lang
+  localStorage.setItem("lang",lang)
   closeLangDialog()
 }
 

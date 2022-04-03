@@ -1,3 +1,4 @@
 export default async () => ({
-    locale: 'en',
-  })
+  // locale: localStorage.getItem('lang') || 'en',
+  locale: 'en',
+})
