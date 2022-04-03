@@ -9,6 +9,7 @@ const globalStore = useStore()
 
 const isThemeDialogOpened = ref(false)
 const isLangDialogOpened = ref(false)
+const isMenuOpened = ref(false)
 
 const toggleDialog = () => {
   isThemeDialogOpened.value = !isThemeDialogOpened.value
@@ -16,10 +17,16 @@ const toggleDialog = () => {
 const toggleLangDialog = () => {
   isLangDialogOpened.value = !isLangDialogOpened.value
 }
+const toggleMenu = () => {
+  isThemeDialogOpened.value = false
+  isMenuOpened.value = !isMenuOpened.value
+}
 
-const closeDialog = () => (isThemeDialogOpened.value = false)
-const closeLangDialog = () => (isLangDialogOpened.value = false)
-
+const closeDialog = () => {
+  isThemeDialogOpened.value = false
+  isMenuOpened.value = false
+  isLangDialogOpened.value = false
+}
 const changeTheme = (color: string) => {
   useColorMode().preference = color
   closeDialog()
@@ -27,7 +34,7 @@ const changeTheme = (color: string) => {
 const changeLang = (lang: string) => {
   i18n.locale.value = lang
   localStorage.setItem("lang",lang)
-  closeLangDialog()
+  closeDialog()
 }
 
 </script>
@@ -53,21 +60,10 @@ const changeLang = (lang: string) => {
           <li>
             <NuxtLink
               :to="{ name: 'index' }"
-              class="font-medium md:block hidden hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                /></svg
-            ></NuxtLink>
+              class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
+            >
+              <IconsHome class="h-5 w-5"
+            /></NuxtLink>
           </li>
           <li>
             <NuxtLink
@@ -132,7 +128,7 @@ const changeLang = (lang: string) => {
           </OnClickOutside>
         </div>
         <div class="relative">
-          <OnClickOutside @trigger="closeLangDialog">
+          <OnClickOutside @trigger="closeDialog">
             <button
               type="button"
               @click="toggleLangDialog"
@@ -165,14 +161,48 @@ const changeLang = (lang: string) => {
             </ul>
           </OnClickOutside>
         </div>
-
-        <a
-          :href="globalStore.app.source"
-          class="flex items-center space-x-2 rounded bg-gray-800 px-4 py-2 text-xs font-medium text-white shadow hover:bg-orange-500 dark:bg-orange-500 sm:text-sm"
+        <div
+          class="relative flex cursor-pointer select-none items-center space-x-2 rounded bg-gray-800 px-4 py-2 text-xs font-medium text-white shadow hover:bg-orange-500 dark:bg-orange-500 hover:dark:bg-orange-600 sm:text-sm"
           target="_blank"
+          @click="toggleMenu"
         >
-          <div>{{ $t("Contribute") }}</div></a
-        >
+          <div class="flex items-center space-x-2">
+            <span>Contribute</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <div
+            class="absolute left-0 top-12 overflow-hidden rounded-lg bg-white shadow-lg"
+            v-if="isMenuOpened"
+          >
+            <ul class="text-gray-700">
+              <li class="px-4 py-3 text-xs hover:bg-orange-200 sm:text-sm">
+                <a href="#"> Contributors </a>
+              </li>
+              <li class="px-4 py-3 text-xs hover:bg-orange-200 sm:text-sm">
+                <a
+                  :href="globalStore.app.source"
+                  target="_blank"
+                  :title="globalStore.app.name.long"
+                >
+                  Open Source
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
