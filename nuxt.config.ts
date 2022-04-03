@@ -9,7 +9,10 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: ''
   },
-  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@pinia/nuxt'],
+  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@pinia/nuxt', '@intlify/nuxt3'],
+  intlify: {
+    vueI18n: 'vue-i18n.mjs'
+  },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
     //   exposeConfig: true,

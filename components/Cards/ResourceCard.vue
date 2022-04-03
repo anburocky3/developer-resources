@@ -33,7 +33,7 @@ defineProps<{
     </div>
     <div class="space-y-2 px-4 py-4">
       <h2 class="text-md font-semibold">{{ resource.title }}</h2>
-      <p class="text-sm text-gray-600 line-clamp-3">
+      <p class="text-sm text-gray-500 line-clamp-3">
         {{ resource.description }}
       </p>
     </div>
