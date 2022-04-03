@@ -46,22 +46,22 @@ const filteredResources = computed(() => {
       <section class="my-10 space-y-10 text-center">
         <div class="space-y-3">
           <h4 class="text-sm font-medium text-gray-500 sm:text-base">
-            Download resources for almost all design projects
+            {{$t('DesignPage.Title')}}
           </h4>
           <h2 class="text-2xl font-bold sm:text-3xl">
-            Design resources for all your ideas
+            {{$t('DesignPage.SubTitle')}}
           </h2>
         </div>
         <div class="flex justify-center">
           <input
             type="text"
-            placeholder="Search by anything..."
+            :placeholder="$t('SearchByAnything')"
             class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 sm:w-[600px]"
           />
           <button
             class="w-16 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
           >
-            <span class="hidden sm:inline-flex">Search</span>
+            <span class="hidden sm:inline-flex">{{$t('Search')}}</span>
             <svg
               class="sm:hidden"
               xmlns="http://www.w3.org/2000/svg"

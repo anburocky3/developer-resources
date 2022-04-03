@@ -8,6 +8,7 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "devDependencies": {
+    "@intlify/nuxt3": "^0.1.10",
     "@nuxtjs/color-mode": "^3.0.2",
     "@nuxtjs/eslint-config-typescript": "^9.0.0",
     "@nuxtjs/tailwindcss": "^5.0.2",
