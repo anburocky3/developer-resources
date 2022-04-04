@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt3'
 export default defineNuxtConfig({
   modules: ['@nuxtjs/color-mode'],
   intlify: {
-    vueI18n: 'vue-i18n.mjs',
+    vueI18n: 'vue-i18n.mjs'
   },
   // ssr: false,
   meta: {
@@ -13,7 +13,12 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: ''
   },
-  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@pinia/nuxt', '@intlify/nuxt3'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@intlify/nuxt3'
+  ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
     //   exposeConfig: true,

@@ -11,12 +11,12 @@ const globalStore = useStore()
       class="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0"
     >
       <span
-        >{{$t('CopyRight')}} &copy; {{ new Date().getFullYear() }} -
+        >Copyright &copy; {{ new Date().getFullYear() }} -
         <NuxtLink :to="{ name: 'index' }" class="hover:text-orange-500">{{
-          $t(globalStore.app.name.long)
+          globalStore.app.name.long
         }}</NuxtLink>
       </span>
-      <span>- {{$t('AllRightsReserved')}}</span>
+      <span>- All Rights Reserved</span>
     </div>
   </footer>
 </template>

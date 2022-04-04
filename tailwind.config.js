@@ -8,7 +8,12 @@ module.exports = {
     './*.vue'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        malar: ['Mukta Malar', 'sans-serif']
+      }
+    }
   },
   plugins: [require('@tailwindcss/line-clamp')]
 }
