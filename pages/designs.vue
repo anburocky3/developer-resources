@@ -61,7 +61,7 @@ const filteredResources = computed(() => {
   <div class="min-h-screen bg-gray-100 p-5 dark:bg-gray-900 sm:p-10">
     <TheHeader />
 
-    <main
+    <div
       class="container mx-auto my-10 rounded bg-white p-5 dark:bg-gray-800 dark:text-white lg:my-20"
     >
       <section class="my-10 space-y-10 text-center">
@@ -124,6 +124,6 @@ const filteredResources = computed(() => {
           />
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </template>

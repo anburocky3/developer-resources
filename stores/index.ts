@@ -14,7 +14,8 @@ export const useStore = defineStore('globalStore', {
         },
         source: 'https://github.com/anburocky3/developer-resources',
         link: ''
-      }
+      },
+      technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'Python']
     }
   },
   actions: {},

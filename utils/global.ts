@@ -14,3 +14,12 @@ export const getCategoryImage = (category: string): string => {
       return 'https://media.istockphoto.com/vectors/error-404-page-not-found-vector-id673101428?k=20&m=673101428&s=170667a&w=0&h=sifFCXQls5ygak3Y-II0cI1tibgQZVyPWzpLHtHKOGg='
   }
 }
+
+export const minToHour = (minute: number) => {
+  const hour = minute / 60
+  return hour === 1 ? `${hour} hr` : `${hour} hrs`
+}
+
+export const hourFormat = (hour: number) => {
+  return hour === 1 ? `${hour} hr` : `${hour} hrs`
+}

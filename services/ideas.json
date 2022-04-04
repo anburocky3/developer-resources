@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Simple Calculator with Addition, Subtraction & Multiply operations",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technology": ["PHP", "Javascript", "Python"],
+    "difficulty": "easy",
+    "time_taken": 60,
+    "source": "some"
+  },
+  {
+    "id": 2,
+    "title": "Build TODO App with CRUD functionality",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 60,
+    "source": ""
+  },
+  {
+    "id": 3,
+    "title": "Blog application with CRUD features",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 120,
+    "source": ""
+  },
+  {
+    "id": 4,
+    "title": "Inventory Management System",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 240,
+    "source": ""
+  },
+  {
+    "id": 5,
+    "title": "E-Commerce using CRUD Operations",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 300,
+    "source": ""
+  }
+]
