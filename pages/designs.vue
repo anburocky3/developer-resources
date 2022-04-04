@@ -28,22 +28,33 @@ const categoryWithCount = computed(() => {
 
 const filteredResources = computed(() => {
   if (selectedCategory.value !== 'All Products') {
-    let filteredResource = resources.filter((res) => res.category === selectedCategory.value)
-    if(searchKey.value != "") {
-      return filteredResource.filter(res => { return Object.values(res).map((r) => { if(typeof r == 'string') return r.includes(searchKey.value) }).some(x => x) })
+    let filteredResource = resources.filter(
+      (res) => res.category === selectedCategory.value
+    )
+    if (searchKey.value != '') {
+      return filteredResource.filter((res) => {
+        return Object.values(res)
+          .map((r) => {
+            if (typeof r == 'string') return r.includes(searchKey.value)
+          })
+          .some((x) => x)
+      })
     }
     return filteredResource
-  }
-  else {
-    if(searchKey.value != "") {
-      return resources.filter(res => { return Object.values(res).map((r) => { if(typeof r == 'string') return r.includes(searchKey.value) }).some(x => x) })
-    }
-    else {
+  } else {
+    if (searchKey.value != '') {
+      return resources.filter((res) => {
+        return Object.values(res)
+          .map((r) => {
+            if (typeof r == 'string') return r.includes(searchKey.value)
+          })
+          .some((x) => x)
+      })
+    } else {
       return resources
     }
   }
 })
-
 </script>
 
 <template>

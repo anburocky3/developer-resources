@@ -66,7 +66,9 @@ const changeLang = (lang: string) => {
         </NuxtLink>
       </div>
       <div class="flex items-center space-x-5 sm:space-x-10">
-        <ul class="ml-2 sm:ml-10 hidden items-center sm:space-x-10 text-sm sm:flex">
+        <ul
+          class="ml-2 hidden items-center text-sm sm:ml-10 sm:flex sm:space-x-10"
+        >
           <li>
             <NuxtLink
               :to="{ name: 'index' }"
