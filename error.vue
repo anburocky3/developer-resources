@@ -25,11 +25,11 @@ useMeta({
             class="rounded bg-gray-800 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white dark:bg-gray-200 dark:text-black sm:text-base"
             >#404</span
           >
-          <h1
+          <h2
             class="bg-gradient-to-r from-indigo-500 to-red-500 bg-clip-text text-2xl font-black uppercase text-transparent sm:text-3xl"
           >
             Page Not Found
-          </h1>
+          </h2>
           <span
             class="text-xs font-bold uppercase dark:text-gray-400 sm:text-sm"
             >oh uh! You are lost,</span
@@ -51,11 +51,11 @@ useMeta({
             class="rounded bg-gray-800 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white dark:bg-gray-200 dark:text-black sm:text-base"
             >#500</span
           >
-          <h1
+          <h2
             class="bg-gradient-to-r from-indigo-500 to-red-500 bg-clip-text text-2xl font-black uppercase text-transparent sm:text-3xl"
           >
             Server Error
-          </h1>
+          </h2>
           <span
             class="text-xs font-bold uppercase dark:text-gray-400 sm:text-sm"
             >oh uh! It is our Fault,</span
@@ -78,11 +78,11 @@ useMeta({
             class="rounded bg-gray-800 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white dark:bg-gray-200 dark:text-black sm:text-base"
             >#UNKNOWN</span
           >
-          <h1
+          <h2
             class="bg-gradient-to-r from-indigo-500 to-red-500 bg-clip-text text-2xl font-black uppercase text-transparent sm:text-3xl"
           >
             Something went Wrong
-          </h1>
+          </h2>
           <span
             class="text-xs font-bold uppercase dark:text-gray-400 sm:text-sm"
             >oh No! We are confused!</span

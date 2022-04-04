@@ -14,9 +14,9 @@ useMeta({
   <div class="flex min-h-screen flex-col">
     <TheHeader />
 
-    <main class="mt-10 sm:mt-16">
+    <div class="mt-10 sm:mt-16">
       <slot />
-    </main>
+    </div>
 
     <TheFooter />
   </div>
