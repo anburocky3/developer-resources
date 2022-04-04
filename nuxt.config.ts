@@ -2,6 +2,9 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  router: {
+    scrollBehavior: () => {}
+  },
   modules: ['@nuxtjs/color-mode'],
   intlify: {
     vueI18n: 'vue-i18n.mjs'

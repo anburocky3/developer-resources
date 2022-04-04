@@ -6,9 +6,8 @@ import resources from '@/services/resources.json'
 definePageMeta({
   title: 'Designs'
 })
-
 const selectedCategory = ref('All Products')
-
+const searchKey = ref('')
 const categoryWithCount = computed(() => {
   return productCategories.map((category) => {
     let resourceCount = 0
@@ -21,7 +20,6 @@ const categoryWithCount = computed(() => {
       }).length
     }
 
-    // if(resources.length)
     const finalName = `${category.name} (${resourceCount})`
 
     return { id: category.id, key: category.name, name: finalName }
@@ -30,10 +28,22 @@ const categoryWithCount = computed(() => {
 
 const filteredResources = computed(() => {
   if (selectedCategory.value !== 'All Products') {
-    return resources.filter((res) => res.category === selectedCategory.value)
+    let filteredResource = resources.filter((res) => res.category === selectedCategory.value)
+    if(searchKey.value != "") {
+      return filteredResource.filter(res => { return Object.values(res).map((r) => { if(typeof r == 'string') return r.includes(searchKey.value) }).some(x => x) })
+    }
+    return filteredResource
   }
-  return resources
+  else {
+    if(searchKey.value != "") {
+      return resources.filter(res => { return Object.values(res).map((r) => { if(typeof r == 'string') return r.includes(searchKey.value) }).some(x => x) })
+    }
+    else {
+      return resources
+    }
+  }
 })
+
 </script>
 
 <template>
@@ -46,14 +56,15 @@ const filteredResources = computed(() => {
       <section class="my-10 space-y-10 text-center">
         <div class="space-y-3">
           <h4 class="text-sm font-medium text-gray-500 sm:text-base">
-            {{$t('DesignPage.Title')}}
+            {{ $t('DesignPage.Title') }}
           </h4>
           <h2 class="text-2xl font-bold sm:text-3xl">
-            {{$t('DesignPage.SubTitle')}}
+            {{ $t('DesignPage.SubTitle') }}
           </h2>
         </div>
         <div class="flex justify-center">
           <input
+            v-model="searchKey"
             type="text"
             :placeholder="$t('SearchByAnything')"
             class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 sm:w-[600px]"
@@ -61,7 +72,7 @@ const filteredResources = computed(() => {
           <button
             class="w-16 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
           >
-            <span class="hidden sm:inline-flex">{{$t('Search')}}</span>
+            <span class="hidden sm:inline-flex">{{ $t('Search') }}</span>
             <svg
               class="sm:hidden"
               xmlns="http://www.w3.org/2000/svg"

@@ -14,10 +14,10 @@ definePageMeta({
       <section class="my-10 space-y-10 text-center">
         <div class="space-y-3">
           <h4 class="text-sm font-medium text-gray-500 sm:text-base">
-            {{$t('AppIdeasPage.Title')}}
+            {{ $t('AppIdeasPage.Title') }}
           </h4>
           <h2 class="text-2xl font-bold sm:text-3xl">
-            {{$t('AppIdeasPage.SubTitle')}}
+            {{ $t('AppIdeasPage.SubTitle') }}
           </h2>
         </div>
         <div class="flex justify-center">
@@ -29,7 +29,7 @@ definePageMeta({
           <button
             class="w-16 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
           >
-            <span class="hidden sm:inline-flex">{{$t('Search')}}</span>
+            <span class="hidden sm:inline-flex">{{ $t('Search') }}</span>
           </button>
         </div>
       </section>

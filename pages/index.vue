@@ -14,16 +14,17 @@ definePageMeta({
         <div class="max-w-2xl">
           <div class="space-y-4">
             <h2 class="text-2xl font-semibold dark:text-white sm:text-6xl">
-              {{ $t("LandingPageHeading") }} <span class="animate-pulse">💎</span>
+              {{ $t('LandingPageHeading') }}
+              <span class="animate-pulse">💎</span>
             </h2>
             <p class="dark:text-white">
-              {{ $t("LandingPageDesc") }}
+              {{ $t('LandingPageDesc') }}
             </p>
           </div>
           <div class="mt-5 flex w-full shadow sm:mt-10 sm:w-fit">
             <input
               type="text"
-              :placeholder='$t("EmailAddress")'
+              :placeholder="$t('EmailAddress')"
               class="w-full rounded-l px-4 py-2 text-sm outline-none sm:w-80 sm:py-4 sm:text-base"
             />
             <button
@@ -39,16 +40,16 @@ definePageMeta({
             <NuxtLink
               :to="{ name: 'designs' }"
               class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{$t('FreeResources')}}</NuxtLink
+              >{{ $t('FreeResources') }}</NuxtLink
             >
             <NuxtLink
               :to="{ name: 'app-ideas' }"
               class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{$t('AppIdeas')}}</NuxtLink
+              >{{ $t('AppIdeas') }}</NuxtLink
             >
             <span
               class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{$t('FreeTips')}}</span
+              >{{ $t('FreeTips') }}</span
             >
           </div>
         </div>
@@ -67,7 +68,7 @@ definePageMeta({
         class="mx-auto max-w-6xl px-5 py-20 dark:text-white sm:py-32 sm:px-0"
       >
         <h4 class="mb-10 text-center text-2xl font-bold sm:mb-20 sm:text-4xl">
-          {{ $t("WhatItIs") }}
+          {{ $t('WhatItIs') }}
         </h4>
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2">
           <div
@@ -81,9 +82,11 @@ definePageMeta({
               class="h-10 w-10"
             />
             <div class="space-y-2 sm:pl-8">
-              <h4 class="text-lg font-bold sm:text-xl">{{ $t("WhatItIsHeading") }}</h4>
+              <h4 class="text-lg font-bold sm:text-xl">
+                {{ $t('WhatItIsHeading') }}
+              </h4>
               <p class="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
-                {{ $t("WhatItIsDesc") }}
+                {{ $t('WhatItIsDesc') }}
               </p>
             </div>
           </div>
@@ -98,16 +101,16 @@ definePageMeta({
       >
         <div class="space-y-4">
           <h4 class="text-2xl font-semibold">
-            {{$t('ContributeReq')}}
+            {{ $t('ContributeReq') }}
           </h4>
           <p class="text-sm sm:text-base">
-            {{$t('ContributeReqDesc')}}
+            {{ $t('ContributeReqDesc') }}
           </p>
         </div>
         <button
           class="w-full rounded bg-gray-800 px-4 py-2 text-sm font-medium hover:bg-orange-500 sm:w-fit sm:text-base"
         >
-          {{$t('Contribute')}}
+          {{ $t('Contribute') }}
         </button>
       </div>
     </section>

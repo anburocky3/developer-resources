@@ -14,18 +14,18 @@ const isMenuOpened = ref(false)
 const toggleThemeDialog = () => {
   isMenuOpened.value = false
   isLangDialogOpened.value = false
-
   isThemeDialogOpened.value = !isThemeDialogOpened.value
 }
 const toggleLangDialog = () => {
   isThemeDialogOpened.value = false
   isMenuOpened.value = false
-
   isLangDialogOpened.value = !isLangDialogOpened.value
 }
 const toggleMenu = () => {
   isThemeDialogOpened.value = false
+  isLangDialogOpened.value = false
   isMenuOpened.value = !isMenuOpened.value
+  console.log(isMenuOpened)
 }
 
 const closeDialog = () => {
@@ -55,7 +55,7 @@ const changeLang = (lang: string) => {
   >
     <!-- bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]  -->
     <div
-      class="container mx-auto flex items-center justify-between px-10 sm:px-0"
+      class="container mx-auto flex items-center justify-between px-2 sm:px-0"
     >
       <div class="flex items-center">
         <NuxtLink
@@ -65,8 +65,8 @@ const changeLang = (lang: string) => {
           <span class="">{{ globalStore.app.name.short }}</span>
         </NuxtLink>
       </div>
-      <div class="flex items-center space-x-10">
-        <ul class="ml-10 hidden items-center space-x-10 text-sm sm:flex">
+      <div class="flex items-center space-x-5 sm:space-x-10">
+        <ul class="ml-2 sm:ml-10 hidden items-center sm:space-x-10 text-sm sm:flex">
           <li>
             <NuxtLink
               :to="{ name: 'index' }"
@@ -92,7 +92,7 @@ const changeLang = (lang: string) => {
         </ul>
         <OnClickOutside
           @trigger="closeDialog"
-          class="flex items-center space-x-10"
+          class="flex items-center space-x-5 sm:space-x-10"
         >
           <div class="relative">
             <button
@@ -191,9 +191,8 @@ const changeLang = (lang: string) => {
         <div
           class="relative flex cursor-pointer select-none items-center space-x-2 rounded bg-gray-800 px-4 py-2 text-xs font-medium text-white shadow hover:bg-orange-500 dark:bg-orange-500 hover:dark:bg-orange-600 sm:text-sm"
           target="_blank"
-          @click="toggleMenu"
         >
-          <div class="flex items-center space-x-2">
+          <div @click="toggleMenu" class="flex items-center space-x-2">
             <span>Contribute</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useStore } from '@/stores'
-import TheFooter from '@/components/TheFooter.vue'
 
 const route = useRoute()
 const globalStore = useStore()

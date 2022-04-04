@@ -5,7 +5,7 @@
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,vue}\""
   },
   "devDependencies": {
     "@intlify/nuxt3": "^0.1.10",
@@ -22,7 +22,7 @@
     "eslint": "^8.12.0",
     "nuxt3": "^3.0.0-27480376.fdd38f9",
     "pinia": "^2.0.12",
-    "prettier": "^2.6.1",
+    "prettier": "2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "typescript": "^4.6.3"
   }
