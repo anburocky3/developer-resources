@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { Idea } from '@/types/global'
-import { minToHour } from '@/utils/global'
+import {
+  minToHour,
+  shareInWhatsApp,
+  shareInTwitter,
+  shareInLinkedIn
+} from '@/utils/global'
 defineProps<{
   idea: Idea
 }>()
@@ -24,7 +29,7 @@ const addToFavourite = (id: number) => {
       class="mb-5 flex flex-col overflow-hidden rounded border shadow hover:shadow-2xl sm:flex-row"
     >
       <div
-        class="flex h-40 w-full flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:w-52"
+        class="flex h-40 w-full flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:h-auto sm:w-52"
       >
         <div
           class="text-xl font-black"
@@ -75,17 +80,25 @@ const addToFavourite = (id: number) => {
           </button>
           <ul class="flex justify-center space-x-4">
             <li>
-              <IconsWhatsaApp
-                class="h-5 w-5 text-gray-600 hover:text-green-600"
-              />
+              <a :href="shareInWhatsApp(idea)" target="_blank">
+                <IconsWhatsaApp
+                  class="h-5 w-5 text-gray-600 hover:text-green-600"
+                />
+              </a>
             </li>
             <li>
-              <IconsTwitter class="h-5 w-5 text-gray-600 hover:text-blue-500" />
+              <a :href="shareInTwitter(idea)" target="_blank">
+                <IconsTwitter
+                  class="h-5 w-5 text-gray-600 hover:text-blue-500"
+                />
+              </a>
             </li>
             <li>
-              <IconsLinkedin
-                class="h-5 w-5 text-gray-600 hover:text-blue-600"
-              />
+              <a :href="shareInLinkedIn(idea)" target="_blank">
+                <IconsLinkedin
+                  class="h-5 w-5 text-gray-600 hover:text-blue-600"
+                />
+              </a>
             </li>
           </ul>
         </div>

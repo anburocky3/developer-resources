@@ -37,7 +37,7 @@ const getChallengeDuration = computed(() => {
     class="container mx-auto my-10 flex flex-col justify-center gap-10 p-5 sm:my-20 sm:flex-row sm:p-0"
   >
     <div class="h-fit w-full sm:w-96">
-      <div class="space-y-4 rounded-t border bg-white p-6 shadow">
+      <div class="space-y-4 rounded-t border-x border-t bg-white p-6 shadow">
         <div class="">
           <h4 class="font-semibold">Technologies</h4>
           <div class="my-5 flex flex-wrap">

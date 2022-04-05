@@ -1,3 +1,5 @@
+import { Idea } from '~~/types/global'
+
 export const getCategoryImage = (category: string): string => {
   switch (category) {
     case 'Icons':
@@ -22,4 +24,55 @@ export const minToHour = (minute: number) => {
 
 export const hourFormat = (hour: number) => {
   return hour === 1 ? `${hour} hr` : `${hour} hrs`
+}
+
+export const shareInWhatsApp = (idea: Idea) => {
+  const pageUrl: string = `https://${location.host}/app-ideas/${idea.id}`
+  const format = `
+Hey, I like to challenge this with you.
+  
+*Mission:* ${idea.title}
+
+*Mission info:* ${idea.description}
+
+*Technology you can work on:* ${idea.technology.join(', ')}
+
+*Difficulty:* ${idea.difficulty.toUpperCase()}
+
+*Time Duration:* ${minToHour(idea.time_taken)}
+
+${
+  idea.source !== ''
+    ? `Don't worry, source-code is already available.`
+    : `Source code is not available, be the first person to accept this challenge.`
+}
+
+Mission Link: ${pageUrl}
+
+- Good Luck, Your mission is on!
+`
+  return `https://api.whatsapp.com/send?text=${encodeURIComponent(format)}`
+}
+
+export const shareInTwitter = (idea: Idea) => {
+  const pageUrl: string = `https://${location.host}/app-ideas/${idea.id}`
+  const format = `
+Hey, folks here is your 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲:
+  
+𝗠𝗶𝘀𝘀𝗶𝗼𝗻: ${idea.title} - (${idea.difficulty.toUpperCase()}, ${minToHour(
+    idea.time_taken
+  )}, [${idea.technology.join(', ')}])
+
+- Good Luck, Your mission is on!
+
+#devchallenge #codechallenge
+`
+  return `https://twitter.com/intent/tweet?url=${pageUrl}&text=${encodeURIComponent(
+    format
+  )}`
+}
+
+export const shareInLinkedIn = (idea: Idea) => {
+  const pageUrl: string = `https://${location.host}/app-ideas/${idea.id}`
+  return `https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}`
 }
