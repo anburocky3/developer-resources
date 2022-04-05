@@ -58,7 +58,7 @@ const changeLang = (lang: string) => {
     >
       <div class="flex items-center">
         <NuxtLink
-          :to="{ name: 'index' }"
+          :to="{ name: 'index', hash: '#' }"
           class="space-x-2 rounded-full px-2 py-0.5 !font-sans text-xl font-bold hover:text-orange-500 dark:text-white sm:px-4 sm:py-2"
         >
           <span class="">{{ globalStore.app.name.short }}</span>
@@ -70,7 +70,7 @@ const changeLang = (lang: string) => {
         >
           <li>
             <NuxtLink
-              :to="{ name: 'index' }"
+              :to="{ name: 'index', hash: '#' }"
               class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
             >
               <IconsHome class="h-5 w-5"
