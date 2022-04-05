@@ -25,7 +25,6 @@ const toggleMenu = () => {
   isThemeDialogOpened.value = false
   isLangDialogOpened.value = false
   isMenuOpened.value = !isMenuOpened.value
-  console.log(isMenuOpened)
 }
 
 const closeDialog = () => {
@@ -129,9 +128,9 @@ const changeLang = (lang: string) => {
                 <li
                   v-for="color of ['light', 'dark']"
                   :key="color"
-                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white"
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
                   :class="{
-                    'bg-gray-300 text-white':
+                    '!bg-orange-500 text-white ':
                       !$colorMode.unknown && color === $colorMode.preference
                   }"
                   @click="changeTheme(color)"
@@ -168,18 +167,18 @@ const changeLang = (lang: string) => {
             >
               <ColorScheme placeholder="..." tag="li">
                 <li
-                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white"
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
                   :class="{
-                    'bg-gray-300 text-white': i18n.locale.value === 'en'
+                    '!bg-orange-500 text-white ': i18n.locale.value === 'en'
                   }"
                   v-on:click="changeLang('en')"
                 >
                   English
                 </li>
                 <li
-                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white"
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 font-malar capitalize tracking-widest text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
                   :class="{
-                    'bg-gray-300 text-white': i18n.locale.value === 'ta'
+                    '!bg-orange-500 text-white': i18n.locale.value === 'ta'
                   }"
                   v-on:click="changeLang('ta')"
                 >
@@ -216,10 +215,16 @@ const changeLang = (lang: string) => {
               v-if="isMenuOpened"
             >
               <ul class="text-gray-700">
-                <li class="px-4 py-3 text-xs hover:bg-orange-200 sm:text-sm">
-                  <a href="#"> Contributors </a>
+                <li
+                  class="px-4 py-3 text-xs hover:bg-orange-200 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 sm:text-sm"
+                >
+                  <NuxtLink :to="{ name: 'contributors' }">
+                    Contributors
+                  </NuxtLink>
                 </li>
-                <li class="px-4 py-3 text-xs hover:bg-orange-200 sm:text-sm">
+                <li
+                  class="px-4 py-3 text-xs hover:bg-orange-200 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 sm:text-sm"
+                >
                   <a
                     :href="globalStore.app.source"
                     target="_blank"

@@ -58,9 +58,7 @@ const filteredResources = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-100 p-5 dark:bg-gray-900 sm:p-10">
-    <TheHeader />
-
+  <div class="mt-10 px-2 sm:p-10">
     <div
       class="container mx-auto my-10 rounded bg-white p-5 dark:bg-gray-800 dark:text-white lg:my-20"
     >
@@ -78,19 +76,16 @@ const filteredResources = computed(() => {
             v-model="searchKey"
             type="text"
             :placeholder="$t('SearchByAnything')"
-            class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 sm:w-[600px]"
+            class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 text-sm shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 sm:w-[600px] sm:text-base"
           />
           <button
-            class="w-16 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
+            class="w-16 space-x-2 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"
           >
-            <span class="hidden sm:inline-flex">{{ $t('Search') }}</span>
             <svg
-              class="sm:hidden"
+              class="inline-flex h-6 w-6 sm:h-5 sm:w-5"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               role="img"
-              width="32"
-              height="32"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
             >
@@ -99,6 +94,7 @@ const filteredResources = computed(() => {
                 d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
               ></path>
             </svg>
+            <span class="hidden sm:inline-flex">{{ $t('Search') }}</span>
           </button>
         </div>
       </section>

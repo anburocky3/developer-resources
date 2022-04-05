@@ -26,7 +26,7 @@ const addToFavourite = (id: number) => {
 <template>
   <a href="">
     <div
-      class="mb-5 flex flex-col overflow-hidden rounded border shadow hover:shadow-2xl sm:flex-row"
+      class="mb-5 flex flex-col overflow-hidden rounded border shadow hover:shadow-2xl dark:border-gray-900 dark:bg-gray-800 dark:text-white sm:flex-row"
     >
       <div
         class="flex h-40 w-full flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:h-auto sm:w-52"
@@ -47,21 +47,21 @@ const addToFavourite = (id: number) => {
             <h2 class="text-lg font-semibold">
               {{ idea.title }}
             </h2>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-gray-500">
               {{ idea.description }}
             </p>
           </div>
 
           <div class="flex space-x-4">
             <div
-              class="flex items-center space-x-2 rounded border px-4 py-2 text-xs hover:bg-gray-50"
+              class="flex items-center space-x-2 rounded border px-4 py-2 text-xs font-medium hover:bg-gray-50 dark:border-gray-700 dark:text-gray-500"
             >
               <IconsTime class="h-4 w-4 text-gray-600" />
               <span>Around {{ minToHour(idea.time_taken) }}</span>
             </div>
             <a
               :href="idea.source"
-              class="flex items-center space-x-2 rounded border px-4 py-2 text-xs hover:bg-gray-50"
+              class="flex items-center space-x-2 rounded border px-4 py-2 text-xs font-medium hover:bg-gray-50 dark:border-gray-700 dark:text-gray-500"
               v-if="idea.source !== ''"
               target="_blank"
             >
@@ -70,9 +70,9 @@ const addToFavourite = (id: number) => {
           </div>
         </div>
 
-        <div class="space-y-4 text-center">
+        <div class="space-y-6 text-center">
           <button
-            class="flex items-center space-x-1 rounded-full border bg-green-600 px-4 py-2 text-xs font-semibold uppercase text-white hover:bg-green-700"
+            class="flex items-center space-x-1 rounded-full bg-green-600 px-4 py-2 text-xs font-semibold uppercase text-white hover:bg-green-700"
             @click.prevent="addToFavourite(idea.id)"
             type="button"
           >

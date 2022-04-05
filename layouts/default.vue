@@ -10,13 +10,12 @@ useMeta({
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex min-h-screen flex-col justify-between">
     <TheHeader />
 
-    <div class="mt-10 sm:mt-16">
+    <div class="flex-1 bg-gray-100 dark:bg-gray-900">
       <slot />
     </div>
-
     <TheFooter />
   </div>
 </template>

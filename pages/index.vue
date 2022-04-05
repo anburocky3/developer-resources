@@ -7,7 +7,7 @@ definePageMeta({
 <template>
   <div>
     <!-- hero -->
-    <section class="bg-red-50 py-20 dark:bg-gray-800 sm:py-32">
+    <section class="mt-10 bg-red-50 py-20 dark:bg-gray-800 sm:py-32">
       <div
         class="container mx-auto flex flex-col items-center justify-around space-y-10 px-5 sm:flex-row sm:space-y-0 sm:px-0"
       >
