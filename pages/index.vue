@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})
 definePageMeta({
   title: '20+ Free Developer Collections'
 })

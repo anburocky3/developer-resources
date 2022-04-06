@@ -1,8 +1,15 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue'
+import { computed, reactive,onMounted } from 'vue'
 import { useStore } from '@/stores'
 import ideas from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})
 
 const store = useStore()
 
