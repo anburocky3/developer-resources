@@ -2,6 +2,13 @@
 import { computed, ref } from '@vue/reactivity'
 import productCategories from '@/services/category.json'
 import resources from '@/services/resources.json'
+import { onMounted } from 'vue'
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})
 
 definePageMeta({
   title: 'Designs'
