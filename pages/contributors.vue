@@ -64,13 +64,13 @@ const { data } = await useFetch<Contributor>(
           target="_blank"
         >
           <span
-            class="text-xs font-semibold uppercase tracking-wide text-gray-600 group-hover:text-white"
+            class="text-xs font-semibold uppercase tracking-wide text-gray-600 group-hover:dark:text-white"
             >Make your first contribution now.</span
           >
           <div class="flex items-center">
             <IconsFavourite class="h-5 w-5 fill-current text-red-600" />
             <IconsArrowRight
-              class="h-5 w-5 fill-current text-gray-600 group-hover:text-white"
+              class="h-5 w-5 fill-current text-gray-600 group-hover:dark:text-white"
             />
           </div>
         </a>

@@ -4,7 +4,7 @@ import { useStore } from '@/stores'
 const route = useRoute()
 const globalStore = useStore()
 
-useMeta({
+useHead({
   title: computed(() => `${route.meta.title} - ${globalStore.app.name.long}`)
 })
 </script>

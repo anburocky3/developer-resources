@@ -3,7 +3,7 @@ const props = defineProps({
   error: Object
 })
 
-useMeta({
+useHead({
   title: `#${props.error.statusCode} - ${props.error.statusMessage}`
 })
 </script>

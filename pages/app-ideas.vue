@@ -39,7 +39,7 @@ const getChallengeDuration = computed(() => {
     >
       <div class="h-fit w-full sm:w-96">
         <div
-          class="space-y-4 rounded-t border-x border-t bg-white p-6 text-white shadow dark:border-gray-900 dark:bg-gray-800"
+          class="space-y-4 rounded-t border-x border-t bg-white p-6 shadow dark:border-gray-900 dark:bg-gray-800 dark:text-white"
         >
           <div class="">
             <h4 class="font-semibold">Technologies</h4>

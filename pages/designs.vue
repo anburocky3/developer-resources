@@ -76,7 +76,7 @@ const filteredResources = computed(() => {
             v-model="searchKey"
             type="text"
             :placeholder="$t('SearchByAnything')"
-            class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 text-sm shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 sm:w-[600px] sm:text-base"
+            class="w-full rounded-l border-2 bg-gray-200 px-4 py-2 text-sm shadow outline-none focus:border-indigo-500 dark:border-gray-500 dark:bg-gray-800 focus:dark:border-indigo-500 sm:w-[600px] sm:text-base"
           />
           <button
             class="w-16 space-x-2 rounded-r bg-indigo-500 px-4 py-2.5 text-xs font-semibold text-white shadow sm:w-fit sm:text-base"

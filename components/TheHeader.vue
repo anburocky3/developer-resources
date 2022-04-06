@@ -79,14 +79,14 @@ const changeLang = (lang: string) => {
           <li>
             <NuxtLink
               :to="{ name: 'designs' }"
-              class="font-medium hover:text-orange-500 dark:text-white"
+              class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
               >{{ $t('Design') }}</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
               :to="{ name: 'app-ideas' }"
-              class="font-medium hover:text-orange-500 dark:text-white"
+              class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
               >{{ $t('AppIdeas') }}</NuxtLink
             >
           </li>
@@ -226,7 +226,7 @@ const changeLang = (lang: string) => {
                   class="px-4 py-3 text-xs hover:bg-orange-200 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 sm:text-sm"
                 >
                   <a
-                    :href="globalStore.app.source"
+                    :href="`${globalStore.app.source}/fork`"
                     target="_blank"
                     :title="globalStore.app.name.long"
                   >
