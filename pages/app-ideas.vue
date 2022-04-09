@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { computed, reactive,onMounted } from 'vue'
+import { computed, reactive, onMounted } from 'vue'
 import { useStore } from '@/stores'
 import ideas from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
+
+const Ideas = useState('Ideas', () => ideas)
+const techFilters = useState('techFilters', () => [])
 
 onMounted(() => {
   window.scrollTo({
@@ -15,8 +18,8 @@ const store = useStore()
 
 const filters = reactive({
   difficulty: '0',
-  challengeDuration: '1',
-  showSource: 'no'
+  challengeDuration: '0',
+  showSource: '-'
 })
 
 definePageMeta({
@@ -24,19 +27,103 @@ definePageMeta({
 })
 
 const getDifficultyRank = computed(() => {
+  filterIdeas()
   if (filters.difficulty === '0') {
-    return 'Easy'
+    return 'All'
   } else if (filters.difficulty === '1') {
+    return 'Easy'
+  } else if (filters.difficulty === '2') {
     return 'Medium'
-  } else {
+  } else if (filters.difficulty === '3') {
     return 'Hard'
   }
 })
 
 const getChallengeDuration = computed(() => {
-  const duration = parseInt(filters.challengeDuration)
-  return hourFormat(duration)
+  if (filters.challengeDuration !== '0') {
+    const duration = parseInt(filters.challengeDuration)
+    return hourFormat(duration)
+  } else {
+    return 'All'
+  }
 })
+
+const filterByTech = (type: string, val: string) => {
+  if (type === 'tech') {
+    if (techFilters.value.includes(val)) {
+      const index = techFilters.value.indexOf(val)
+      if (index > -1) {
+        techFilters.value.splice(index, 1)
+      }
+    } else {
+      techFilters.value.push(val)
+    }
+    filterIdeas()
+  }
+}
+
+const filterIdeas = () => {
+  let techRes = []
+  let diffRes = []
+  let durRes = []
+  let srcRes = []
+  if (techFilters.value.length > 0) {
+    techRes = ideas.filter((i) => {
+      return (
+        i.technology.filter((t) => {
+          return techFilters.value.includes(t)
+        }).length > 0
+      )
+    })
+  } else {
+    techRes = ideas
+  }
+  if (filters.difficulty !== '') {
+    if (filters.difficulty === '1') {
+      diffRes = ideas.filter((i) => {
+        return i.difficulty === 'easy'
+      })
+    }
+    if (filters.difficulty === '2') {
+      diffRes = ideas.filter((i) => {
+        return i.difficulty === 'medium'
+      })
+    }
+    if (filters.difficulty === '3') {
+      diffRes = ideas.filter((i) => {
+        return i.difficulty === 'hard'
+      })
+    }
+    if (filters.difficulty === '0') {
+      diffRes = ideas
+    }
+  }
+  if (filters.challengeDuration !== '0') {
+    durRes = ideas.filter((i) => {
+      return i.time_taken === parseInt(filters.challengeDuration) * 60
+    })
+  } else {
+    durRes = ideas
+  }
+  if (filters.showSource !== '-') {
+    if (filters.showSource === 'no') {
+      srcRes = ideas.filter((i) => {
+        return i.source === ''
+      })
+    } else {
+      srcRes = ideas.filter((i) => {
+        return i.source !== ''
+      })
+    }
+  } else {
+    srcRes = ideas
+  }
+  let res = techRes
+    .filter((e) => diffRes.includes(e))
+    .filter((e) => durRes.includes(e))
+    .filter((e) => srcRes.includes(e))
+  Ideas.value = res
+}
 </script>
 
 <template>
@@ -52,9 +139,15 @@ const getChallengeDuration = computed(() => {
             <h4 class="font-semibold">Technologies</h4>
             <div class="my-5 flex flex-wrap">
               <span
-                class="mr-3 mb-3 cursor-pointer rounded-full bg-gray-200 px-4 py-2 text-xs font-medium hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-700"
+                class="mr-3 mb-3 cursor-pointer rounded-full px-4 py-2 text-xs font-medium"
+                :class="
+                  techFilters.includes(tech)
+                    ? 'bg-orange-600 text-white dark:bg-orange-600'
+                    : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 hover:dark:bg-gray-700'
+                "
                 v-for="(tech, i) in store.technologies"
                 :key="i"
+                @click="filterByTech('tech', tech)"
               >
                 {{ tech }}
               </span>
@@ -69,7 +162,7 @@ const getChallengeDuration = computed(() => {
               <input
                 type="range"
                 min="0"
-                max="2"
+                max="3"
                 step="1"
                 class="w-full"
                 v-model="filters.difficulty"
@@ -97,6 +190,15 @@ const getChallengeDuration = computed(() => {
           <div class="space-y-4">
             <h4 class="font-semibold">Source Available</h4>
             <div class="space-x-4 text-gray-600 dark:text-white">
+              <label class="space-x-2">
+                <input
+                  type="radio"
+                  name="source"
+                  value="-"
+                  v-model="filters.showSource"
+                />
+                <span>All</span>
+              </label>
               <label class="space-x-2">
                 <input
                   type="radio"
@@ -138,7 +240,7 @@ const getChallengeDuration = computed(() => {
         </a>
       </div>
       <div class="flex-1">
-        <CardsIdeaList v-for="(idea, i) in ideas" :key="i" :idea="idea" />
+        <CardsIdeaList v-for="(idea, i) in Ideas" :key="i" :idea="idea" />
       </div>
     </div>
   </div>

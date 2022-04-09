@@ -3,7 +3,6 @@ import { useStore } from '@/stores'
 import { Contributor } from '@/types/global'
 import { onMounted } from 'vue'
 onMounted(() => {
-
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
