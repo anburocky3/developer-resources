@@ -151,5 +151,13 @@
     "description": "BrandEPS is a database of brand logos and icons. logos and icons can download in vector EPS, SVG, JPG and PNG file formats",
     "link": "https://brandeps.com/",
     "license": "Free"
+  },
+  {
+    "id": 20,
+    "category": "Stock Photos",
+    "title": "freepik",
+    "description": "Freepik is a search engine that helps users find high-quality photos, vector images, illustrations and PSD files for their creative projects.",
+    "link": "https://freepik.com/",
+    "license": "freemium"
   }
 ]
