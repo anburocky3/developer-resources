@@ -24,7 +24,7 @@ const addToFavourite = (id: number) => {
 </script>
 
 <template>
-  <a href="">
+  <NuxtLink :to="{ name: 'app-ideas-id', params: { id: idea.id } }">
     <div
       class="mb-5 flex flex-col overflow-hidden rounded border shadow hover:shadow-2xl dark:border-gray-900 dark:bg-gray-800 dark:text-white sm:flex-row"
     >
@@ -104,5 +104,5 @@ const addToFavourite = (id: number) => {
         </div>
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>

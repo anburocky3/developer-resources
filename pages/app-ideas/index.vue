@@ -17,8 +17,8 @@ onMounted(() => {
 const store = useStore()
 
 const filters = reactive({
-  difficulty: '0',
-  challengeDuration: '0',
+  difficulty: '1',
+  challengeDuration: '1',
   showSource: '-'
 })
 

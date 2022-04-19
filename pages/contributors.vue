@@ -15,7 +15,7 @@ definePageMeta({
   title: 'Contributors'
 })
 
-const { data } = await useFetch<Contributor>(
+const { data } = await useFetch<Contributor[]>(
   'https://api.github.com/repos/anburocky3/developer-resources/contributors'
 )
 </script>
