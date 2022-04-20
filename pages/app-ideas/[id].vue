@@ -19,7 +19,9 @@ useHead({
 
 <template>
   <div class="mt-10">
-    <div class="flex items-center justify-center bg-indigo-500 py-24">
+    <div
+      class="flex items-center justify-center bg-indigo-500 py-24 !font-sans"
+    >
       <div
         class="flex flex-col items-center justify-center space-y-10 text-white sm:flex-row sm:space-y-0 sm:space-x-10"
       >
@@ -88,7 +90,7 @@ useHead({
       class="mx-2 my-10 flex max-w-6xl flex-col items-center justify-between space-y-5 rounded bg-white p-10 shadow dark:bg-gray-800 sm:my-10 sm:mx-auto sm:flex-row sm:space-y-0"
     >
       <h2 class="font-semibold text-gray-800 dark:text-white sm:text-lg">
-        Share this with your friends here:
+        {{ $t('shareWithFriends') }}
       </h2>
       <a
         :href="shareInTwitter(idea)"

@@ -53,7 +53,7 @@ const changeLang = (lang: string) => {
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 left-0 z-50 border-b-2 border-orange-500 bg-white py-3 shadow-xl dark:bg-gray-800 sm:py-3"
+    class="fixed inset-x-0 top-0 left-0 z-50 border-b-2 border-orange-500 bg-white py-3 !font-sans shadow-xl dark:bg-gray-800 sm:py-3"
   >
     <!-- bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]  -->
     <div
@@ -83,7 +83,7 @@ const changeLang = (lang: string) => {
             <NuxtLink
               :to="{ name: 'designs' }"
               class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
-              >{{ $t('Design') }}</NuxtLink
+              >{{ $t('design') }}</NuxtLink
             >
           </li>
           <li>
@@ -93,7 +93,7 @@ const changeLang = (lang: string) => {
               :class="{
                 '!text-orange-500': isRouteActive('app-ideas*')
               }"
-              >{{ $t('AppIdeas') }}
+              >{{ $t('appIdeas') }}
             </NuxtLink>
           </li>
         </ul>
@@ -188,7 +188,7 @@ const changeLang = (lang: string) => {
                   }"
                   v-on:click="changeLang('ta')"
                 >
-                  {{ $t('Tamil') }}
+                  {{ $t('tamil') }}
                 </li>
               </ColorScheme>
             </ul>

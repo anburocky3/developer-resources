@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import { useStore } from '~/stores'
+
+const globalStore = useStore()
 onMounted(() => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
 })
+
 definePageMeta({
   title: '20+ Free Developer Collections'
 })
@@ -21,43 +25,33 @@ definePageMeta({
         <div class="max-w-2xl">
           <div class="space-y-4">
             <h2 class="text-2xl font-semibold dark:text-white sm:text-6xl">
-              {{ $t('LandingPageHeading') }}
+              {{ $t('landingPageHeading') }}
               <span class="animate-pulse">💎</span>
             </h2>
             <p class="dark:text-white">
-              {{ $t('LandingPageDesc') }}
+              {{ $t('landingPageDesc') }}
             </p>
           </div>
           <div class="mt-5 flex w-full shadow sm:mt-10 sm:w-fit">
-            <input
-              type="text"
-              :placeholder="$t('EmailAddress')"
-              class="w-full rounded-l px-4 py-2 text-sm outline-none sm:w-80 sm:py-4 sm:text-base"
-            />
-            <button
-              type="button"
-              class="rounded-r bg-red-600 px-4 py-2 font-semibold text-white sm:px-8"
-            >
-              {{ $t('Subscribe') }}
-            </button>
-          </div>
-          <div
-            class="mt-5 flex flex-col space-y-3 text-xs sm:flex-row sm:space-x-4 sm:space-y-0"
-          >
-            <NuxtLink
-              :to="{ name: 'designs' }"
-              class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{ $t('FreeResources') }}</NuxtLink
-            >
-            <NuxtLink
-              :to="{ name: 'app-ideas' }"
-              class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{ $t('AppIdeas') }}</NuxtLink
-            >
-            <span
-              class="rounded bg-white px-4 py-1 text-sm text-gray-400 shadow hover:bg-gray-100 dark:bg-gray-600 hover:dark:bg-gray-700"
-              >{{ $t('FreeTips') }}</span
-            >
+            <div class="space-x-4">
+              <a
+                :href="globalStore.social.youtube"
+                class="rounded bg-red-600 px-4 py-3 !font-sans font-medium text-white hover:bg-red-700"
+                target="_blank"
+              >
+                <IconsYouTube class="text-lg" />
+                {{ $t('learnProgrammingBtn') }}
+                <span class="!font-malar">({{ $t('tamil') }})</span>
+              </a>
+              <a
+                :href="globalStore.social.discord"
+                class="rounded bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700"
+                target="_blank"
+              >
+                <IconsDiscord class="text-lg" />
+                Discord
+              </a>
+            </div>
           </div>
         </div>
         <div class="">
@@ -75,25 +69,58 @@ definePageMeta({
         class="mx-auto max-w-6xl px-5 py-20 dark:text-white sm:py-32 sm:px-0"
       >
         <h4 class="mb-10 text-center text-2xl font-bold sm:mb-20 sm:text-4xl">
-          {{ $t('WhatItIs') }}
+          {{ $t('whatItIs') }}
         </h4>
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2">
           <div
             class="flex flex-col space-y-4 rounded border bg-white p-10 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex-row sm:space-y-0"
-            v-for="i in 4"
-            :key="i"
           >
-            <img
-              src="https://oliver-new.netlify.app/images/icon/pen&ruller.svg"
-              alt=""
-              class="h-10 w-10"
-            />
+            <img :src="$t('features[0].icon')" alt="" class="h-10 w-10" />
             <div class="space-y-2 sm:pl-8">
               <h4 class="text-lg font-bold sm:text-xl">
-                {{ $t('WhatItIsHeading') }}
+                {{ $t('features[0].title') }}
               </h4>
               <p class="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
-                {{ $t('WhatItIsDesc') }}
+                {{ $t('features[0].desc') }}
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded border bg-white p-10 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex-row sm:space-y-0"
+          >
+            <img :src="$t('features[1].icon')" alt="" class="h-10 w-10" />
+            <div class="space-y-2 sm:pl-8">
+              <h4 class="text-lg font-bold sm:text-xl">
+                {{ $t('features[1].title') }}
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
+                {{ $t('features[1].desc') }}
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded border bg-white p-10 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex-row sm:space-y-0"
+          >
+            <img :src="$t('features[2].icon')" alt="" class="h-10 w-10" />
+            <div class="space-y-2 sm:pl-8">
+              <h4 class="text-lg font-bold sm:text-xl">
+                {{ $t('features[2].title') }}
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
+                {{ $t('features[2].desc') }}
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded border bg-white p-10 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex-row sm:space-y-0"
+          >
+            <img :src="$t('features[3].icon')" alt="" class="h-10 w-10" />
+            <div class="space-y-2 sm:pl-8">
+              <h4 class="text-lg font-bold sm:text-xl">
+                {{ $t('features[3].title') }}
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300 sm:text-base">
+                {{ $t('features[3].desc') }}
               </p>
             </div>
           </div>
@@ -108,16 +135,16 @@ definePageMeta({
       >
         <div class="space-y-4">
           <h4 class="text-2xl font-semibold">
-            {{ $t('ContributeReq') }}
+            {{ $t('contribution.title') }}
           </h4>
           <p class="text-sm sm:text-base">
-            {{ $t('ContributeReqDesc') }}
+            {{ $t('contribution.desc') }}
           </p>
         </div>
         <button
           class="w-full rounded bg-gray-800 px-4 py-2 text-sm font-medium hover:bg-orange-500 sm:w-fit sm:text-base"
         >
-          {{ $t('Contribute') }}
+          {{ $t('contribute') }}
         </button>
       </div>
     </section>

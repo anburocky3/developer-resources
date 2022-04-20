@@ -1,35 +1,65 @@
 {
-  "Design": "Design",
-  "AppIdeas": "App Ideas",
-  "Contribute": "Contribute",
+  "design": "Design",
+  "appIdeas": "App Ideas",
+  "contribute": "Contribute",
   "light": "Light",
   "dark": "Dark",
-  "Tamil": "தமிழ்",
-  "LandingPageHeading": "Discover unknown resources ",
-  "LandingPageDesc": "We have an treasure waiting for you. Do you want to know?",
-  "EmailAddress": "Email Address",
-  "Subscribe": "Subscribe",
-  "FreeResources": "Free Resources",
-  "FreeTips": "Free Tips",
-  "WhatItIs": "What it is?",
-  "WhatItIsHeading": "Well Documented",
-  "WhatItIsDesc": "Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.",
-  "ContributeReq": "Help us by contributing to this app",
-  "ContributeReqDesc": "Found any interesting resource or have any interesting ideas? Share it with us. Contribute it now.",
-  "DesignPage": {
-    "Title": "Download resources for almost all design projects",
-    "SubTitle": "Design resources for all your ideas"
+  "tamil": "தமிழ்",
+  "landingPageHeading": "Discover unknown resources ",
+  "landingPageDesc": "We have an treasure waiting for you. Do you want to know?",
+  "learnProgrammingBtn": "Learn programming",
+  "emailAddress": "Email Address",
+  "subscribe": "Subscribe",
+  "freeResources": "Free Resources",
+  "freeTips": "Free Tips",
+  "whatItIs": "What it is?",
+  "features": [
+    {
+      "icon": "https://oliver-new.netlify.app/images/icon/pen&ruller.svg",
+      "title": "Design Resource Collections",
+      "desc": "Unknown design collections handpicked by community"
+    },
+    {
+      "icon": "https://oliver-new.netlify.app/images/icon/code.svg",
+      "title": "App-Ideas to practice",
+      "desc": "Improve your coding with practice with our handpicked app-ideas."
+    },
+    {
+      "icon": "https://oliver-new.netlify.app/images/icon/code.svg",
+      "title": "Developer Configurations",
+      "desc": "Get developer configurations & help articles shared by experts."
+    },
+    {
+      "icon": "https://oliver-new.netlify.app/images/icon/headphones.svg",
+      "title": "Always Open source",
+      "desc": "Found an interesting resource, ideas, share with us to the world."
+    }
+  ],
+  "contribution": {
+    "title": "Help us by contributing to this app",
+    "desc": "Found any interesting resource or have any interesting ideas? Share it with us. Contribute it now."
   },
-  "AppIdeasPage": {
-    "Title": "App Ideas",
-    "SubTitle": "App ideas will be displayed here."
+  "designPage": {
+    "title": "Download resources for almost all design projects",
+    "subTitle": "Design resources for all your ideas"
   },
-  "Search": "Search",
-  "SearchByAnything": "Search by anything...",
+  "search": "Search",
+  "searchByAnything": "Search by anything...",
   "AllProducts": "All Products",
   "Icons": "Icons",
   "WebApps": "Web App",
   "MobileApps": "Mobile App",
   "Illustration": "Illustration",
-  "StockPhoto": "Stock Photos"
+  "StockPhoto": "Stock Photos",
+  "appIdeasPage": {
+    "Title": "App Ideas",
+    "SubTitle": "App ideas will be displayed here."
+  },
+  "technologies": "Technologies",
+  "difficulty": "Difficulty",
+  "challengeDuration": "Challenge duration",
+  "sourceAvailable": "Source available",
+  "addToTODO": "Add to Todo",
+  "aroundHr": "Around ",
+  "shareWithFriends": "Share this with your friends here:"
 }

@@ -26,7 +26,7 @@ const addToFavourite = (id: number) => {
 <template>
   <NuxtLink :to="{ name: 'app-ideas-id', params: { id: idea.id } }">
     <div
-      class="mb-5 flex flex-col overflow-hidden rounded border shadow hover:shadow-2xl dark:border-gray-900 dark:bg-gray-800 dark:text-white sm:flex-row"
+      class="mb-5 flex flex-col overflow-hidden rounded border !font-sans shadow hover:shadow-2xl dark:border-gray-900 dark:bg-gray-800 dark:text-white sm:flex-row"
     >
       <div
         class="flex h-40 w-full flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:h-auto sm:w-52"
@@ -57,7 +57,9 @@ const addToFavourite = (id: number) => {
               class="flex items-center space-x-2 rounded border px-4 py-2 text-xs font-medium hover:bg-gray-50 dark:border-gray-700 dark:text-gray-500"
             >
               <IconsTime class="h-4 w-4 text-gray-600" />
-              <span>Around {{ minToHour(idea.time_taken) }}</span>
+              <span>
+                {{ $t('aroundHr') + ' ' + minToHour(idea.time_taken) }} }}</span
+              >
             </div>
             <a
               :href="idea.source"
@@ -65,7 +67,8 @@ const addToFavourite = (id: number) => {
               v-if="idea.source !== ''"
               target="_blank"
             >
-              <IconsCode class="h-4 w-4" /> <span>Source available</span>
+              <IconsCode class="h-4 w-4" />
+              <span>{{ $t('sourceAvailable') }}</span>
             </a>
           </div>
         </div>
@@ -76,7 +79,7 @@ const addToFavourite = (id: number) => {
             @click.prevent="addToFavourite(idea.id)"
             type="button"
           >
-            <IconsPlus class="h-5 w-5" /> <span>Add to Todo</span>
+            <IconsPlus class="h-5 w-5" /> <span>{{ $t('addToTODO') }}</span>
           </button>
           <ul class="flex justify-center space-x-4">
             <li>

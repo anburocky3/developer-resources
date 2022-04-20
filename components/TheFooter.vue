@@ -5,7 +5,7 @@ const globalStore = useStore()
 </script>
 <template>
   <footer
-    class="border-t border-gray-800 bg-gray-900 p-5 text-sm text-gray-600"
+    class="border-t border-gray-800 bg-gray-900 p-5 !font-sans text-sm text-gray-600"
   >
     <div
       class="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0"

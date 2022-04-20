@@ -20,7 +20,7 @@
     "@vueuse/core": "^8.3.0",
     "@vueuse/nuxt": "^8.3.0",
     "eslint": "^8.13.0",
-    "nuxt": "3.0.0-rc.0",
+    "nuxt": "npm:nuxt3@latest",
     "pinia": "^2.0.13",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.10",

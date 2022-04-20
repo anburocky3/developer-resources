@@ -136,10 +136,10 @@ const filterIdeas = () => {
           class="space-y-4 rounded-t border-x border-t bg-white p-6 shadow dark:border-gray-900 dark:bg-gray-800 dark:text-white"
         >
           <div class="">
-            <h4 class="font-semibold">Technologies</h4>
+            <h4 class="font-semibold">{{ $t('technologies') }}</h4>
             <div class="my-5 flex flex-wrap">
               <span
-                class="mr-3 mb-3 cursor-pointer rounded-full px-4 py-2 text-xs font-medium"
+                class="mr-3 mb-3 cursor-pointer rounded-full px-4 py-2 !font-sans text-xs font-medium"
                 :class="
                   techFilters.includes(tech)
                     ? 'bg-orange-600 text-white dark:bg-orange-600'
@@ -155,8 +155,10 @@ const filterIdeas = () => {
           </div>
           <div class="space-y-4">
             <h4 class="font-semibold">
-              Difficulty
-              <span class="text-sm font-medium">({{ getDifficultyRank }})</span>
+              {{ $t('difficulty') }}
+              <span class="!font-sans text-sm font-medium"
+                >({{ getDifficultyRank }})</span
+              >
             </h4>
             <div>
               <input
@@ -171,8 +173,8 @@ const filterIdeas = () => {
           </div>
           <div class="space-y-4">
             <h4 class="font-semibold">
-              Challenge duration
-              <span class="text-sm font-medium"
+              {{ $t('challengeDuration') }}
+              <span class="!font-sans text-sm font-medium"
                 >({{ getChallengeDuration }})</span
               >
             </h4>
@@ -188,7 +190,7 @@ const filterIdeas = () => {
             </div>
           </div>
           <div class="space-y-4">
-            <h4 class="font-semibold">Source Available</h4>
+            <h4 class="font-semibold">{{ $t('sourceAvailable') }}</h4>
             <div class="space-x-4 text-gray-600 dark:text-white">
               <label class="space-x-2">
                 <input
