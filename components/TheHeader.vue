@@ -3,9 +3,12 @@ import { ref } from 'vue'
 import { OnClickOutside } from '@vueuse/components'
 import { useStore } from '@/stores'
 import { useI18n } from 'vue-i18n'
+import { isRouteActive } from '~/utils/global'
 
 const i18n = useI18n()
 const globalStore = useStore()
+
+const route = useRoute()
 
 const isThemeDialogOpened = ref(false)
 const isLangDialogOpened = ref(false)
@@ -87,8 +90,11 @@ const changeLang = (lang: string) => {
             <NuxtLink
               :to="{ name: 'app-ideas' }"
               class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
-              >{{ $t('AppIdeas') }}</NuxtLink
-            >
+              :class="{
+                '!text-orange-500': isRouteActive('app-ideas*')
+              }"
+              >{{ $t('AppIdeas') }}
+            </NuxtLink>
           </li>
         </ul>
         <OnClickOutside

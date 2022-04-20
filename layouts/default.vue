@@ -13,7 +13,7 @@ useHead({
   <div class="flex min-h-screen flex-col justify-between">
     <TheHeader />
 
-    <div class="mt-16 flex-1 bg-gray-100 dark:bg-gray-900">
+    <div class="flex-1 bg-gray-100 dark:bg-gray-900">
       <slot />
     </div>
     <TheFooter />

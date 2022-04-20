@@ -26,6 +26,19 @@ export const hourFormat = (hour: number) => {
   return hour === 1 ? `${hour} hr` : `${hour} hrs`
 }
 
+export const isRouteActive = (expression: string) => {
+  const route = useRoute()
+  return route.name.toString().match(expression) ? true : false
+
+  // if(n === true){
+  //   return true
+  // }
+  // else {
+  //   return false
+  // }
+  // return n
+}
+
 export const shareInWhatsApp = (idea: Idea) => {
   const pageUrl: string = `https://${location.host}/app-ideas/${idea.id}`
   const format = `
