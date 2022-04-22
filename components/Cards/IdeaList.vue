@@ -29,7 +29,7 @@ const addToFavourite = (id: number) => {
       class="mb-5 flex flex-col overflow-hidden rounded border !font-sans shadow hover:shadow-2xl dark:border-gray-900 dark:bg-gray-800 dark:text-white sm:flex-row"
     >
       <div
-        class="flex h-40 w-full flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:h-auto sm:w-52"
+        class="flex h-40 w-full flex-none flex-col items-center justify-center space-y-2 bg-indigo-500 text-center uppercase text-white sm:h-auto sm:w-36"
       >
         <div
           class="text-xl font-black"
@@ -47,7 +47,7 @@ const addToFavourite = (id: number) => {
             <h2 class="text-lg font-semibold">
               {{ idea.title }}
             </h2>
-            <p class="text-sm text-gray-700 dark:text-gray-500">
+            <p class="text-sm text-gray-700 dark:text-gray-500 line-clamp-2">
               {{ idea.description }}
             </p>
           </div>
@@ -58,7 +58,7 @@ const addToFavourite = (id: number) => {
             >
               <IconsTime class="h-4 w-4 text-gray-600" />
               <span>
-                {{ $t('aroundHr') + ' ' + minToHour(idea.time_taken) }} }}</span
+                {{ $t('aroundHr') + ' ' + minToHour(idea.time_taken) }}</span
               >
             </div>
             <a
