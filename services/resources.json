@@ -13,7 +13,6 @@
     "title": "Streamline Illustrations",
     "description": "Need great illustrations, but cannot find an illustrator? We've created all these vector illustrations for you.",
     "link": "https://www.streamlinehq.com/illustrations",
-
     "license": "Freemium"
   },
   {
@@ -155,9 +154,33 @@
   {
     "id": 20,
     "category": "Stock Photos",
-    "title": "freepik",
+    "title": "Freepik",
     "description": "Freepik is a search engine that helps users find high-quality photos, vector images, illustrations and PSD files for their creative projects.",
     "link": "https://freepik.com/",
-    "license": "freemium"
+    "license": "Freemium"
+  },
+  {
+    "id": 21,
+    "category": "Illustrations",
+    "title": "Threedee",
+    "description": "🌎 Biggest 3D illustrations library in the world 🏗️ 100,000,000+ combinations of 3D characters",
+    "link": "https://threedee.design/",
+    "license": "Premium"
+  },
+  {
+    "id": 22,
+    "category": "Icons",
+    "title": "Lordicon",
+    "description": "Lordicon is a powerful library of carefully crafted animated icons, ready to use in digital products, presentations, or videos!",
+    "link": "https://lordicon.com/",
+    "license": "Freemium"
+  },
+  {
+    "id": 22,
+    "category": "Stock Photos",
+    "title": "Allthefreestock",
+    "description": "Get all the Free Stock Images 📷, Videos 📹, Music 🎼 and Icons in one location.",
+    "link": "https://allthefreestock.com/",
+    "license": "Freemium"
   }
 ]

@@ -2,11 +2,11 @@
   {
     "id": 1,
     "title": "Simple Calculator with Addition, Subtraction & Multiply operations",
-    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "description": "Calculators is a great way to understand UI and event processing in an application. In this problem you will create a calculator that supports basic arithmetic calculations on integers.",
     "technology": ["PHP", "Javascript", "Python"],
     "difficulty": "easy",
     "time_taken": 60,
-    "source": "some"
+    "source": "https://github.com/yogesh7401/calculator"
   },
   {
     "id": 2,
@@ -42,6 +42,60 @@
     "technology": ["PHP", "Javascript"],
     "difficulty": "easy",
     "time_taken": 300,
+    "source": ""
+  },
+  {
+    "id": 6,
+    "title": "Weather app",
+    "description": "A weather application to get the temperature, weather condition and whether it is day or night of a particular city using a free weather api.",
+    "technology": ["PHP", "Javascript","Python"],
+    "difficulty": "easy",
+    "time_taken": 120,
+    "source": ""
+  },
+  {
+    "id": 7,
+    "title": "Passport status tracking system",
+    "description": "This project provides a clear Passport status tracking for the end users.Project covers the end to end communication of applying passport to Status tracking.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "medium",
+    "time_taken": 300,
+    "source": ""
+  },
+  {
+    "id": 8,
+    "title": "Face detection",
+    "description": "It focuses on building a face detection software using the OpenCV library. The face detection program will be modelled in a way that it can detect faces in live stream videos.",
+    "technology": ["Python"],
+    "difficulty": "medium",
+    "time_taken": 240,
+    "source": ""
+  },
+  {
+    "id": 9,
+    "title": "Detection of brain tumor with the help of image segmentation",
+    "description": "The premise of the project is straightforward. You have to create a classifier that should be able to find tumors just from the pictures of the brain that you would provide the model.",
+    "technology": ["PHP","Python","Javascript"],
+    "difficulty": "hard",
+    "time_taken": 360,
+    "source": ""
+  },
+  {
+    "id": 10,
+    "title": "Decentralized chat app",
+    "description": "Decentralized applications are apps that run on a decentralized network via peer-to-peer protocols. One of their biggest strengths is that they avoid any single point of failure.",
+    "technology": ["PHP","Python","Javascript"],
+    "difficulty": "hard",
+    "time_taken": 360,
+    "source": ""
+  },
+  {
+    "id": 11,
+    "title": "Tic Tac Toe",
+    "description": "Tic Tac Toe is a good project for beginners, this is a two player game, where each player will get a chance one after the other.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "easy",
+    "time_taken": 60,
     "source": ""
   }
 ]
