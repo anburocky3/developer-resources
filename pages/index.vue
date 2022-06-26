@@ -141,11 +141,14 @@ definePageMeta({
             {{ $t('contribution.desc') }}
           </p>
         </div>
-        <button
+        <a
+          :href="`${globalStore.app.source}/fork`"
+          target="_blank"
+          :title="globalStore.app.name.long"
           class="w-full rounded bg-gray-800 px-4 py-2 text-sm font-medium hover:bg-orange-500 sm:w-fit sm:text-base"
         >
           {{ $t('contribute') }}
-        </button>
+        </a>
       </div>
     </section>
   </div>
