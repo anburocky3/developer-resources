@@ -31,6 +31,9 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css'
     //   exposeConfig: true,
   },
+  build: {
+    transpile: ['vue-i18n']
+  },
   vite: {
     plugins: [
       vueI18n({
