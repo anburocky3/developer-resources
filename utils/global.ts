@@ -12,6 +12,8 @@ export const getCategoryImage = (category: string): string => {
       return 'https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/737351/mobile-ux-design-best-practices-9874a6518f6e4130f6b5edc1c72c60bc.png'
     case 'Stock Photos':
       return 'https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg'
+    case 'Tools':
+      return 'https://element5digital.com/wp-content/uploads/2019/06/design-tools-featured-img-copy.jpg'
     default:
       return 'https://media.istockphoto.com/vectors/error-404-page-not-found-vector-id673101428?k=20&m=673101428&s=170667a&w=0&h=sifFCXQls5ygak3Y-II0cI1tibgQZVyPWzpLHtHKOGg='
   }

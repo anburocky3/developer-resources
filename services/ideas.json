@@ -97,5 +97,59 @@
     "difficulty": "easy",
     "time_taken": 60,
     "source": ""
+  },
+  {
+    "id": 12,
+    "title": "Countdown Timer",
+    "description": "A countdown timer is a virtual clock on a landing page that counts down from a certain number or date to indicate the beginning or end of an event or offer.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "easy",
+    "time_taken": 60,
+    "source": "https://github.com/tutorialzine/jQuery-Countdown"
+  },
+  {
+    "id": 13,
+    "title": "Calendar App",
+    "description": "A Simple Calendar that has a chart showing the days, weeks, and months of the year",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "medium",
+    "time_taken": 300,
+    "source": "https://github.com/tutorialzine/jQuery-Countdown"
+  },
+  {
+    "id": 14,
+    "title": "Bus Booking System",
+    "description": "Bus Booking System is a web based application which is connected to a complete database. The database includes information about buses, no. of seats available, occupancy, availability, days and time of operation, no. of buses  from point ‘A’ to point ‘B’, Price ranges, automated report and bill generation etc.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "hard",
+    "time_taken": 360,
+    "source": ""
+  },
+  {
+    "id": 15,
+    "title": "Hospital Management System",
+    "description": "The project “Hospital Management System” is aimed to develop to maintainthe day-to-day state of admission/discharge of Patients, List of Doctors (Consultants), List of medicines, Bills etc.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "hard",
+    "time_taken": 360,
+    "source": ""
+  },
+  {
+    "id": 16,
+    "title": "Online Exam System",
+    "description": "Exam Software is a Test Management Software, which offers a complete solution for Computer Based Test (CBT) .They are used to set up multiple choice tests for set time periods that when submitted are automatically corrected and the results logged beside the student’s reference number.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "hard",
+    "time_taken": 360,
+    "source": ""
+  },
+  {
+    "id": 17,
+    "title": "Online Chat System",
+    "description": "Online Chat System project will allow its users to chat with their friend circles and send invitation to their other friends to join this chat system.",
+    "technology": ["PHP","Javascript"],
+    "difficulty": "medium",
+    "time_taken": 300,
+    "source": ""
   }
 ]

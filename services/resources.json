@@ -230,5 +230,29 @@
     "description": "An apparel and tshirt design mockup generator plus a marketplace of t-shirt designs.",
     "link": "https://www.tshirtdesigns.com/mockups",
     "license": "Freemium "
+  },
+  {
+    "id": 29,
+    "category": "Illustrations",
+    "title": "Story set",
+    "description": "Awesome free customizable illustrations for your next project Customize, animate and download our illustrations to make incredible landing pages, app or presentations!",
+    "link": "https://storyset.com/s",
+    "license": "Free"
+  },
+  {
+    "id": 30,
+    "category": "Illustrations",
+    "title": "Drawkit",
+    "description": "Beautiful, free illustrations. Updated weekly. Hand-drawn vector illustration and icon resources, perfect for your next project.",
+    "link": "https://drawkit.com/",
+    "license": "Freemium"
+  },
+  {
+    "id": 31,
+    "category": "Icons",
+    "title": "Iconfinder",
+    "description": "confinder is the world's largest marketplace for icons, illustrations and 3D illustrations in SVG, AI, and PNG format.",
+    "link": "https://www.iconfinder.com/",
+    "license": "Freemium"
   }
 ]
