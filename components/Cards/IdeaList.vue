@@ -47,7 +47,7 @@ const addToFavourite = (id: number) => {
             <h2 class="text-lg font-semibold">
               {{ idea.title }}
             </h2>
-            <p class="text-sm text-gray-700 dark:text-gray-500 line-clamp-2">
+            <p class="text-sm text-gray-700 line-clamp-2 dark:text-gray-500">
               {{ idea.description }}
             </p>
           </div>

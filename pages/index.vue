@@ -32,8 +32,8 @@ definePageMeta({
               {{ $t('landingPageDesc') }}
             </p>
           </div>
-          <div class="mt-5 flex w-full shadow sm:mt-10 sm:w-fit">
-            <div class="space-x-4">
+          <div class="mt-5 flex w-full sm:mt-10 sm:w-fit">
+            <div class="flex flex-wrap gap-4">
               <a
                 :href="globalStore.social.youtube"
                 class="rounded bg-red-600 px-4 py-3 !font-sans font-medium text-white hover:bg-red-700"
@@ -45,7 +45,7 @@ definePageMeta({
               </a>
               <a
                 :href="globalStore.social.discord"
-                class="rounded bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700"
+                class="rounded bg-blue-600 px-4 py-3 font-medium text-white hover:bg-blue-700"
                 target="_blank"
               >
                 <IconsDiscord class="text-lg" />

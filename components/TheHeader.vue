@@ -13,27 +13,38 @@ const route = useRoute()
 const isThemeDialogOpened = ref(false)
 const isLangDialogOpened = ref(false)
 const isMenuOpened = ref(false)
+const isToggleOpened = ref(false)
 
 const toggleThemeDialog = () => {
   isMenuOpened.value = false
   isLangDialogOpened.value = false
   isThemeDialogOpened.value = !isThemeDialogOpened.value
+  isToggleOpened.value = false
 }
 const toggleLangDialog = () => {
   isThemeDialogOpened.value = false
   isMenuOpened.value = false
   isLangDialogOpened.value = !isLangDialogOpened.value
+  isToggleOpened.value = false
 }
 const toggleMenu = () => {
   isThemeDialogOpened.value = false
   isLangDialogOpened.value = false
+  isToggleOpened.value = false
   isMenuOpened.value = !isMenuOpened.value
+}
+const toggleHamburgerMenu = () => {
+  isThemeDialogOpened.value = false
+  isLangDialogOpened.value = false
+  isMenuOpened.value = false
+  isToggleOpened.value = !isToggleOpened.value
 }
 
 const closeDialog = () => {
   isThemeDialogOpened.value = false
   isMenuOpened.value = false
   isLangDialogOpened.value = false
+  isToggleOpened.value = false
 }
 const changeTheme = (color: string) => {
   useColorMode().preference = color
@@ -53,11 +64,12 @@ const changeLang = (lang: string) => {
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 left-0 z-50 border-b-2 border-orange-500 bg-white py-3 !font-sans shadow-xl dark:bg-gray-800 sm:py-3"
+    class="fixed  inset-x-0 top-0 left-0 z-50 border-b-2 border-orange-500 bg-white py-3 !font-sans shadow-xl dark:bg-gray-800 sm:py-3"
   >
     <!-- bg-gradient-to-r from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]  -->
+    <div class="container mx-auto relative">
     <div
-      class="container mx-auto flex items-center justify-between px-2 sm:px-0"
+      class="flex items-center justify-between px-2 sm:px-0"
     >
       <div class="flex items-center">
         <NuxtLink
@@ -69,7 +81,7 @@ const changeLang = (lang: string) => {
       </div>
       <div class="flex items-center space-x-5 sm:space-x-10">
         <ul
-          class="ml-2 hidden items-center text-sm sm:ml-10 sm:flex sm:space-x-10"
+          class="ml-2 hidden items-center text-sm md:ml-10 md:flex md:space-x-10"
         >
           <li>
             <NuxtLink
@@ -99,7 +111,7 @@ const changeLang = (lang: string) => {
         </ul>
         <OnClickOutside
           @trigger="closeDialog"
-          class="flex items-center space-x-5 sm:space-x-10"
+          class="flex items-center space-x-5 md:space-x-10"
         >
           <div class="relative">
             <button
@@ -242,8 +254,44 @@ const changeLang = (lang: string) => {
               </ul>
             </div>
           </div>
+          <div class="md:hidden" @click="toggleHamburgerMenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--charm"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+            >
+              <path
+                class="dark:stroke-white"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+              ></path>
+            </svg>
+          </div>
         </OnClickOutside>
+  <div v-if="isToggleOpened" class="fixed md:hidden top-[70px] text-sm right-2 bg-orange-500  text-white rounded-lg">
+    <p class="p-2 w-48 rounded-t-lg cursor-pointer hover:bg-white hover:text-orange-500">
+      <NuxtLink :to="{ name: 'index' }">{{ $t('home')}}</NuxtLink>
+    </p>
+    <hr />
+    <p class="p-2 w-48 hover:bg-white cursor-pointer hover:text-orange-500">
+      <NuxtLink :to="{ name: 'designs' }">{{ $t('design')}}</NuxtLink>
+    </p>
+    <hr />
+    <p class="p-2 w-48 rounded-b-lg cursor-pointer hover:bg-white hover:text-orange-500">
+      <NuxtLink :to="{ name: 'app-ideas' }">{{ $t('appIdeas')}}</NuxtLink>
+    </p>
+  </div>
       </div>
+    </div>
     </div>
   </header>
 </template>
