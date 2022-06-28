@@ -280,21 +280,21 @@ const changeLang = (lang: string) => {
             class="fixed top-[70px] right-2 rounded-lg bg-orange-500 text-sm text-white md:hidden"
           >
             <p
-              class="w-48 cursor-pointer rounded-t-lg p-2 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer rounded-t-lg p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
             >
-              <NuxtLink :to="{ name: 'index' }">{{ $t('home') }}</NuxtLink>
+              <NuxtLink class="w-48 inline-block" :to="{ name: 'index' }">{{ $t('home') }}</NuxtLink>
             </p>
             <hr />
             <p
-              class="w-48 cursor-pointer p-2 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
             >
-              <NuxtLink :to="{ name: 'designs' }">{{ $t('design') }}</NuxtLink>
+              <NuxtLink class="w-48 inline-block" :to="{ name: 'designs' }">{{ $t('design') }}</NuxtLink>
             </p>
             <hr />
             <p
-              class="w-48 cursor-pointer rounded-b-lg p-2 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer rounded-b-lg p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
             >
-              <NuxtLink :to="{ name: 'app-ideas' }">{{
+              <NuxtLink class="w-48 inline-block" :to="{ name: 'app-ideas' }">{{
                 $t('appIdeas')
               }}</NuxtLink>
             </p>
