@@ -226,7 +226,7 @@ const filterIdeas = () => {
         <!-- Navigate to favourite page or show in alert form -->
         <a
           href="#"
-          class="group flex items-center justify-between rounded-b border bg-white p-6 text-sm shadow hover:bg-gray-100 dark:border-gray-900 dark:bg-gray-800 hover:dark:bg-gray-700"
+          class="group flex items-center justify-between rounded-b border bg-white p-6 text-sm shadow hover:bg-indigo-600 dark:border-gray-900 dark:bg-gray-800 hover:dark:bg-gray-700"
           target="_blank"
         >
           <span
@@ -234,7 +234,9 @@ const filterIdeas = () => {
             >Check your saved TODO.</span
           >
           <div class="flex items-center">
-            <IconsFavourite class="h-5 w-5 fill-current text-red-600" />
+            <IconsFavourite
+              class="h-5 w-5 fill-current text-red-600 group-hover:text-white dark:group-hover:text-red-600"
+            />
             <IconsArrowRight
               class="h-5 w-5 fill-current text-gray-600 group-hover:text-white"
             />

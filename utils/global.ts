@@ -13,7 +13,7 @@ export const getCategoryImage = (category: string): string => {
     case 'Stock Photos':
       return 'https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg'
     case 'Tools':
-      return 'https://www.cloudways.com/blog/wp-content/uploads/Server-Management.jpg'
+      return 'https://element5digital.com/wp-content/uploads/2019/06/design-tools-featured-img-copy.jpg'
     default:
       return 'https://media.istockphoto.com/vectors/error-404-page-not-found-vector-id673101428?k=20&m=673101428&s=170667a&w=0&h=sifFCXQls5ygak3Y-II0cI1tibgQZVyPWzpLHtHKOGg='
   }
