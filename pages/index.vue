@@ -131,7 +131,7 @@ definePageMeta({
 
     <section class="bg-green-600 px-10 py-20 text-white sm:px-0">
       <div
-        class="mx-auto flex max-w-6xl flex-col items-center justify-between space-y-10 sm:flex-row sm:space-y-0"
+        class="mx-auto flex max-w-6xl flex-col items-baseline space-y-10 sm:flex-row sm:items-center sm:justify-between sm:space-y-0"
       >
         <div class="space-y-4">
           <h4 class="text-2xl font-semibold">
@@ -145,7 +145,7 @@ definePageMeta({
           :href="`${globalStore.app.source}/fork`"
           target="_blank"
           :title="globalStore.app.name.long"
-          class="w-full rounded bg-gray-800 px-4 py-2 text-sm font-medium hover:bg-orange-500 sm:w-fit sm:text-base"
+          class="rounded bg-gray-800 px-4 py-2 text-sm font-medium hover:bg-orange-500 sm:w-fit sm:text-base"
         >
           {{ $t('contribute') }}
         </a>

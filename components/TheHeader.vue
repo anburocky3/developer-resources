@@ -253,48 +253,31 @@ const changeLang = (lang: string) => {
               </div>
             </div>
             <div class="md:hidden" @click="toggleHamburgerMenu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                class="iconify iconify--charm"
-                width="32"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  class="dark:stroke-white"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
-                ></path>
-              </svg>
+              <IconsHamburger />
             </div>
           </OnClickOutside>
           <div
             v-if="isToggleOpened"
-            class="fixed top-[70px] right-2 rounded-lg bg-orange-500 text-sm text-white md:hidden"
+            class="boxArrowTop fixed top-[70px] right-2 divide-y divide-slate-300/20 rounded-lg bg-white text-sm text-black shadow-lg dark:bg-gray-700 dark:shadow-gray-800 md:hidden"
           >
             <p
-              class="w-48 cursor-pointer rounded-t-lg p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer rounded-t-lg p-3 hover:bg-orange-500 hover:text-white dark:text-white hover:dark:bg-orange-500"
             >
-              <NuxtLink class="w-48 inline-block" :to="{ name: 'index' }">{{ $t('home') }}</NuxtLink>
+              <NuxtLink class="inline-block w-48" :to="{ name: 'index' }">{{
+                $t('home')
+              }}</NuxtLink>
             </p>
-            <hr />
             <p
-              class="w-48 cursor-pointer p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer p-3 hover:bg-orange-500 hover:text-white dark:text-white hover:dark:bg-orange-500"
             >
-              <NuxtLink class="w-48 inline-block" :to="{ name: 'designs' }">{{ $t('design') }}</NuxtLink>
+              <NuxtLink class="inline-block w-48" :to="{ name: 'designs' }">{{
+                $t('design')
+              }}</NuxtLink>
             </p>
-            <hr />
             <p
-              class="w-48 cursor-pointer rounded-b-lg p-3 dark:bg-gray-700 dark:text-white hover:dark:bg-orange-500 hover:bg-white hover:text-orange-500"
+              class="w-48 cursor-pointer rounded-b-lg p-3 hover:bg-orange-500 hover:text-white dark:text-white hover:dark:bg-orange-500"
             >
-              <NuxtLink class="w-48 inline-block" :to="{ name: 'app-ideas' }">{{
+              <NuxtLink class="inline-block w-48" :to="{ name: 'app-ideas' }">{{
                 $t('appIdeas')
               }}</NuxtLink>
             </p>
@@ -305,7 +288,7 @@ const changeLang = (lang: string) => {
   </header>
 </template>
 
-<style>
+<style scoped>
 /* home route and active route will show in bold as it matches / and /about */
 ul a.router-link-active {
   @apply text-green-600;
@@ -313,5 +296,10 @@ ul a.router-link-active {
 /* exact link will show the primary color for only the exact matching link */
 ul a.router-link-exact-active {
   @apply text-orange-600 dark:text-orange-500;
+}
+
+.boxArrowTop:after {
+  @apply absolute right-2.5 top-[0%] -mt-4
+  border-t-8 border-r-8 border-b-8 border-l-8 border-solid border-t-transparent border-r-transparent border-b-white border-l-transparent  content-['_'] dark:border-b-gray-700;
 }
 </style>
