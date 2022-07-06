@@ -254,5 +254,13 @@
     "description": "confinder is the world's largest marketplace for icons, illustrations and 3D illustrations in SVG, AI, and PNG format.",
     "link": "https://www.iconfinder.com/",
     "license": "Freemium"
+  },
+  {
+    "id": 32,
+    "category": "Illustrations",
+    "title": "Freepik Illustrations",
+    "description": "Get high quality freepik resources.",
+    "link": "https://www.freepik.com/vectors/illustrations",
+    "license": "Freemium"
   }
 ]
