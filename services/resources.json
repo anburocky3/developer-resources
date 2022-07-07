@@ -262,5 +262,13 @@
     "description": "Get high quality freepik resources.",
     "link": "https://www.freepik.com/vectors/illustrations",
     "license": "Freemium"
+  },
+  {
+    "id": 34,
+    "category": "Icons",
+    "title": "Akar Icons",
+    "description": "Perfectly rounded icon library made for designers and developers.",
+    "link": "https://akaricons.com/",
+    "license": "Free"
   }
 ]
