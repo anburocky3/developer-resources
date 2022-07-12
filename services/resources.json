@@ -270,5 +270,13 @@
     "description": "Perfectly rounded icon library made for designers and developers.",
     "link": "https://akaricons.com/",
     "license": "Free"
+  },
+  {
+    "id": 35,
+    "category": "Tools",
+    "title": "Code Beautifier",
+    "description": "Code Beautifier Beautify CSS, HTML and JS code.",
+    "link": "https://freecodetools.org/beautifier/",
+    "license": "Free"
   }
 ]
