@@ -278,5 +278,13 @@
     "description": "Code Beautifier Beautify CSS, HTML and JS code.",
     "link": "https://freecodetools.org/beautifier/",
     "license": "Free"
+  },
+  {
+    "id": 36,
+    "category": "Tools",
+    "title": "Buttons Generator",
+    "description": "Generat Buttons to Your Web Site",
+    "link": "https://markodenic.com/tools/buttons-generator/",
+    "license": "Free"
   }
 ]
