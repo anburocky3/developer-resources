@@ -286,5 +286,54 @@
     "description": "Generate Buttons to Your Web Site",
     "link": "https://markodenic.com/tools/buttons-generator/",
     "license": "Free"
+  },
+  {
+    "id": 37,
+    "category": "Illustrations",
+    "title": "GraphicSurf Illustrations",
+    "description": "You can free download illustrations. All this you can download for free and use for commercial purposes or for personal use.",
+    "link": "https://graphicsurf.com/category/illustrations/",
+    "license": "Freemium"
+  },
+  {
+    "id": 38,
+    "category": "Illustrations",
+    "title": "humaaans Illustrations",
+    "description": "humaaans Mix-&-match illustrations of people with a design library",
+    "link": "https://www.humaaans.com/",
+    "license": "Premium"
+  },
+  {
+    "id": 39 ,
+    "category": "Illustrations",
+    "title": "ManyPixels",
+    "description": "Discover new illustrations every week. Use them on your landing pages, blog posts, newsletters, social media graphics and more!",
+    "link": "https://www.manypixels.co/gallery",
+    "license": "Freemium"
+  },
+  {
+    "id":40 ,
+    "category": "Illustrations",
+    "title": "Open Peeps",
+    "description": "A hand-drawn illustration library.",
+    "link": "https://www.openpeeps.com/",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 41,
+    "category": "Illustrations",
+    "title": "Open Doodles",
+    "description": "A Free set of Open-Source illustrations for your next project.",
+    "link": "https://www.opendoodles.com/",
+    "license": "Freemium"
+  },
+  {
+    "id": 42,
+    "category": "Illustrations",
+    "title": "AbsurdDesign",
+    "description": "absurd illustrations that make sense.",
+    "link": "https://absurd.design/",
+    "license": "Freemium, Premium"
   }
+
 ]
