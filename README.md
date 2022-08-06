@@ -41,9 +41,14 @@ icons, template ui, illustration, etc. Feel free to browse around.
 
 3. Commit and push! 😊👍
 
-### Author:
 
-[Anbuselvan Rocky](https://bit.ly/AnbuselvanRockyFB)
+
+## CEO :
+
+| <img src = "https://avatars.githubusercontent.com/u/15264938?v=4"> |
+| :----------------------------------------------------------:       |
+|         [Anbuselvan Rocky](https://github.com/anburocky3)          |                        
+
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
 
