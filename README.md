@@ -1,3 +1,4 @@
+<p align="center" >
 # Developer Resources 🎉 [Live](https://devfree-resources.netlify.app)
 
 [![Stars](https://img.shields.io/github/stars/anburocky3/developer-resources)](https://github.com/anburocky3/developer-resources)
@@ -9,7 +10,7 @@
 
 A simple directory where you will find lots of freemium design resources like
 icons, template ui, illustration, etc. Feel free to browse around.
-
+</p>
 ## ⚙️ How it works?
 
 [![Design Resource Collections](./screenshots/presentation.gif)](https://devfree-resources.netlify.app)
