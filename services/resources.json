@@ -334,6 +334,80 @@
     "description": "absurd illustrations that make sense.",
     "link": "https://absurd.design/",
     "license": "Freemium, Premium"
+  },
+  {
+    "id": 43,
+    "category": "Icons",
+    "title": "Simple Icons",
+    "description": "Free SVG icons for popular brands",
+    "link": "https://simpleicons.org",
+    "license": "Freemium"
+  },
+  {
+    "id": 44,
+    "category": "Icons",
+    "title": "ShutterStock",
+    "description": "One platform. Millions of ways to tell your story",
+    "link": "https://www.shutterstock.com/search/icons",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 45,
+    "category": "Icons",
+    "title": "Shape Icons",
+    "description": "icons and illustrations fully customizable", 
+    "link": "https://shape.so/browse",
+    "license": "Freemium and Premium"
+  },
+  {
+    "id": 46,
+    "category": "Icons",
+    "title": "Remixicon",
+    "description": "Simply Delightful Icon System",
+    "link": "https://remixicon.com",
+    "license": "Freemium"
+  },
+  {
+    "id": 47,
+    "category": "Icons",
+    "title": "Orion",
+    "description": " Icon Library Advanced Interactive Web Application Icons",
+    "link": "https://orioniconlibrary.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 48,
+    "category": "Icons",
+    "title": "Online Web Icon",
+    "description": " YOU NEXT A THE ICONS OF WEB PROJECT STARTS HERE!",
+    "link": "https://www.onlinewebfonts.com/icon/",
+    "license": "Freemium"
+  },
+  {
+    "id": 49,
+    "category": "Icons",
+    "title": "The Noun Project",
+    "description": "The Worlds Most Diverse and Extensive Icon Collection",
+    "link": "https://thenounproject.com/icons/",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 50,
+    "category": "Icons",
+    "title": "Google Material Icons ",
+    "description": "Material Icons are available in five styles and a range of downloadable sizes and densities. The icons are based on the core Material Design principles and metrics.",
+    "link": "https://fonts.google.com/icons?selected=Material+Icons",
+    "license": "Freemium"
+  },
+  {
+    "id": 51,
+    "category": "Icons",
+    "title": "Line Icon",
+    "description": "Line Icons categorized into different categories - select, view edit, download SVG and start using ",
+    "link": "https://lineicons.com/icons/",
+    "license": "Freemium, Premium"
   }
-
 ]
+
+
+
