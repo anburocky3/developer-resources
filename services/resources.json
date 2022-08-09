@@ -459,9 +459,9 @@
   {
     "id": 58,
     "category": "Illustrations",
-    "title": "Illustrations 3D",
+    "title": "Illustrations",
     "description": "Free vector and 3D illustrations. Trendy. Cover all subjects",
-    "link": "https://icons8.com/illustrations",
+    "link": "https://icons8.com/illustrations/styles",
     "license": "Freemium, Premium"
   },
   {
@@ -558,6 +558,110 @@
     "title": "Smash Icons",
     "description": "The Smashicons library is constantly growing. Sign up for our Pro license and unlock all Pro icons and Premium design resources",
     "link": "https://smashicons.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 71,
+    "category": "Illustrations",
+    "title": "Smash illustrations",
+    "description": "Awesome illustration constructor with colorful and trendy characters ",
+    "link": "https://usesmash.com/",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 72,
+    "category": "Illustrations",
+    "title": " Uihut Illustrations",
+    "description": "UI Kit, illustration and graphics",
+    "link": "https://www.uihut.com/illustrations",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 73,
+    "category": "Icons",
+    "title": " Uihut Icons",
+    "description": "Open-source CSS, SVG and Figma UI Icons Available in SVG Sprite",
+    "link": "https://www.uihut.com/icons",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 74,
+    "category": "Mobile App",
+    "title": "Uihut Mobile App Design",
+    "description": " App Designs ",
+    "link": "https://www.uihut.com/mobile-app-designs",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 75,
+    "category": "Illustrations",
+    "title": "Uihut 3D illustration",
+    "description": "6 3D illustration design for you",
+    "link": "https://www.uihut.com/3d-illustrations",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 76,
+    "category": "Illustrations",
+    "title": "Flexiple",
+    "description": " Royalty free Vector Illustrations for Commercial Use ",
+    "link": "https://flexiple.com/illustrations/",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 77,
+    "category": "Illustrations",
+    "title": "Isometric Love illustration",
+    "description": " Cute Isometric Objects For Your Design",
+    "link": "https://isometriclove.com/",
+    "license": "Freemium"
+  },
+  {
+    "id": 78,
+    "category": "Illustrations",
+    "title": "Iradesign illustrations",
+    "description": " Discover IRA illustrations to power up your project.",
+    "link": "https://iradesign.io/gallery/illustrations",
+    "license": "Freemium"
+  },
+  {
+    "id": 79,
+    "category": "Illustrations",
+    "title": "Interfacer Illustrations",
+    "description": " Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet ",
+    "link": "https://interfacer.xyz",
+    "license": "Freemium"
+  },
+  {
+    "id": 80,
+    "category": "Icons",
+    "title": "Interfacer Icons",
+    "description": " Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet ",
+    "link": "https://interfacer.xyz",
+    "license": "Freemium"
+  },
+  {
+    "id": 81,
+    "category": "Illustrations",
+    "title": "Artify Illustrations",
+    "description": " illustrations from the Artify library directly inside Figma ",
+    "link": "https://www.artify.co/vector-illustrations",
+    "license": "Freemium"
+  },
+  {
+    "id": 82,
+    "category": "Illustrations",
+    "title": "Freellustrations",
+    "description": " Collection of high-resolution vector or illustrations background images for modern websites and landing pages  ",
+    "link": "https://www.freellustrations.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 83,
+    "category": "Illustrations",
+    "title": "error404",
+    "description": " Royalty free illustrations for 404 pages    ",
+    "link": "https://error404.fun",
     "license": "Freemium, Premium"
   }
 ]
