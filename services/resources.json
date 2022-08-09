@@ -406,6 +406,159 @@
     "description": "Line Icons categorized into different categories - select, view edit, download SVG and start using ",
     "link": "https://lineicons.com/icons/",
     "license": "Freemium, Premium"
+  },
+  {
+    "id": 52,
+    "category": "Icons",
+    "title": "pixel perfect icons",
+    "description": "Jam icons is a set of SVG icons designed for web projects",
+    "link": "https://jam-icons.com/",
+    "license": "Freemium"
+
+  },
+  {
+    "id": 53,
+    "category": "Icons",
+    "title": "Design Bombs",
+    "description": "Perfect icons for all your design",
+    "link": "https://www.designbombs.com/iconsweets2/",
+    "license": "Freemium"
+  },
+  {
+    "id": 54,
+    "category": "Icons",
+    "title": "icon scout",
+    "description": "Choose from ten different icon styles: colored outline, doodle, dual tone, flat, glyph, gradient, isometric, line, rounded or sticker",
+    "link": "https://iconscout.com/icons",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 55,
+    "category": "Illustrations",
+    "title": "Icon scout Illustration ",
+    "description": "Access the world's largest Design Ecosystem: Assets, Integrations, and Motion.",
+    "link": "https://iconscout.com/illustrations",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 56,
+    "category": "Illustrations",
+    "title": "Icon scout 3D Illustration",
+    "description": "free and premium 3D illustrations",
+    "link": "https://iconscout.com/3ds",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 57,
+    "category": "Icons",
+    "title": "Icons8",
+    "description": "Free icons that match each other",
+    "link": "https://icons8.com/icons",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 58,
+    "category": "Illustrations",
+    "title": "Illustrations 3D",
+    "description": "Free vector and 3D illustrations. Trendy. Cover all subjects",
+    "link": "https://icons8.com/illustrations",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 59,
+    "category": "Icons",
+    "title": "icon horse",
+    "description": "Confidently use Icon Horse and get bulletproof favicons with fallbacks if no icon exists.", 
+    "link": "https://icon.horse",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 60,
+    "category": "Icons",
+    "title": "Hero Icons",
+    "description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+    "link": "https://heroicons.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 61,
+    "category": "Icons",
+    "title": "Classic Heroicons",
+    "description": "Heroicons are a unique set of icons for your marketing website that make it easy to customize with CSS to better align to your brand.",
+    "link": "https://classic.heroicons.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 62,
+    "category": "Icons",
+    "title": "Font Awesome",
+    "description": "Take the hassle out of icons in your website.",
+    "link": "https://fontawesome.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 63,
+    "category": "Icons",
+    "title": "Free Icons",
+    "description": "THE LARGEST DATABASE OF FREE ICONS",
+    "link": "https://freeicons.io",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 64,
+    "category": "Icons",
+    "title": "Flaticon",
+    "description": "Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD and CSS formats",
+    "link": "https://www.flaticon.com",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 65,
+    "category": "Icons",
+    "title": "Feather Icons",
+    "description": "Simply beautiful open source icons",
+    "link": "https://feathericons.com",
+    "license": "Freemium"
+  },
+  {
+    "id": 66,
+    "category": "Icons",
+    "title": "CSS Icons",
+    "description": "Open-source CSS, SVG and Figma UI Icons Available in SVG Sprite, styled-components, NPM & API",
+    "link": "https://css.gg",
+    "license": "Freemium"
+  },
+  {
+    "id": 67,
+    "category": "Icons",
+    "title": "Core UI",
+    "description": "Bootstrap Admin Dashboard Template & UI Components Library",
+    "link": "https://coreui.io/icons/",
+    "license": "Freemium, Premium"
+  },
+  {
+    "id": 68,
+    "category": "Icons",
+    "title": "Circum Icons",
+    "description": " Consistent open source icons for React, Vue and Svelte ",
+    "link": "https://circumicons.com",
+    "license": "Freemium"
+  },
+  {
+    "id": 69,
+    "category": "Icons",
+    "title": "Boxicons",
+    "description": "  High Quality Web Icons Simple Open Source icons carefully crafted for designers & developers",
+    "link": "https://boxicons.com",
+    "license": "Freemium"
+  },
+  {
+    "id": 70,
+    "category": "Icons",
+    "title": "Smash Icons",
+    "description": "The Smashicons library is constantly growing. Sign up for our Pro license and unlock all Pro icons and Premium design resources",
+    "link": "https://smashicons.com",
+    "license": "Freemium, Premium"
   }
 ]
 
