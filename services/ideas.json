@@ -151,5 +151,14 @@
     "difficulty": "medium",
     "time_taken": 300,
     "source": ""
+  },
+  {
+    "id": 18,
+    "title": "YouTube Thumbnail Downloader",
+    "description": "Have a ability to download YouTube Thumbnail with the help of YouTube URL. It Should support the playlist too. Tip: YouTube Thumbnail can be created by this url: <code>https://i.ytimg.com/vi/[VIDEO_ID]/maxresdefault.jpg</code>",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 30,
+    "source": ""
   }
 ]

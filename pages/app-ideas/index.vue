@@ -18,7 +18,7 @@ const store = useStore()
 
 const filters = reactive({
   difficulty: '1',
-  challengeDuration: '1',
+  challengeDuration: '0',
   showSource: '-'
 })
 
