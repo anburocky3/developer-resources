@@ -160,5 +160,14 @@
     "difficulty": "easy",
     "time_taken": 30,
     "source": ""
+  },
+  {
+    "id": 19,
+    "title": "Get My IP",
+    "description": "Have a ability to get the user's ip and display it in user-friendly way. IP can be accessed by this url: https://ipv4.icanhazip.com/",
+    "technology": ["PHP", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": ""
   }
 ]

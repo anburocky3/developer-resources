@@ -304,7 +304,7 @@
     "license": "Premium"
   },
   {
-    "id": 39 ,
+    "id": 39,
     "category": "Illustrations",
     "title": "ManyPixels",
     "description": "Discover new illustrations every week. Use them on your landing pages, blog posts, newsletters, social media graphics and more!",
@@ -312,12 +312,12 @@
     "license": "Freemium"
   },
   {
-    "id":40 ,
+    "id": 40,
     "category": "Illustrations",
     "title": "Open Peeps",
     "description": "A hand-drawn illustration library.",
     "link": "https://www.openpeeps.com/",
-    "license": "Freemium, Premium"
+    "license": "Freemium"
   },
   {
     "id": 41,
@@ -333,7 +333,14 @@
     "title": "AbsurdDesign",
     "description": "absurd illustrations that make sense.",
     "link": "https://absurd.design/",
-    "license": "Freemium, Premium"
+    "license": "Freemium"
+  },
+  {
+    "id": 43,
+    "category": "Icons",
+    "title": "TheNounProject",
+    "description": "Noun Project features the most diverse collection of icons and stock photos ever. Download SVG and PNG. Browse over 3 million art-quality icons and photos.",
+    "link": "https://thenounproject.com",
+    "license": "Freemium"
   }
-
 ]

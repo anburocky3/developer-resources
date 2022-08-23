@@ -1,6 +1,7 @@
 {
   "design": "Design",
   "appIdeas": "App Ideas",
+  "hosting": "Hosting",
   "contribute": "Contribute",
   "light": "Light",
   "dark": "Dark",
@@ -43,6 +44,10 @@
   "designPage": {
     "title": "Download resources for almost all design projects",
     "subTitle": "Design resources for all your ideas"
+  },
+  "hostingPage": {
+    "title": "Free Hosting Guides",
+    "subTitle": "Get Free hosting sites using our recommended guides"
   },
   "search": "Search",
   "searchByAnything": "Search by anything...",

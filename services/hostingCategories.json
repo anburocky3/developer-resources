@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "All Hosting"
+  },
+  {
+    "id": 2,
+    "name": "JS/NodeJS"
+  },
+  {
+    "id": 3,
+    "name": "PHP"
+  },
+  {
+    "id": 4,
+    "name": "Python"
+  }
+]
