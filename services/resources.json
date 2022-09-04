@@ -355,7 +355,7 @@
     "id": 45,
     "category": "Icons",
     "title": "Shape Icons",
-    "description": "icons and illustrations fully customizable", 
+    "description": "icons and illustrations fully customizable",
     "link": "https://shape.so/browse",
     "license": "Freemium and Premium"
   },
@@ -371,7 +371,7 @@
     "id": 47,
     "category": "Icons",
     "title": "Orion",
-    "description": " Icon Library Advanced Interactive Web Application Icons",
+    "description": "Icon Library Advanced Interactive Web Application Icons",
     "link": "https://orioniconlibrary.com",
     "license": "Freemium"
   },
@@ -379,7 +379,7 @@
     "id": 48,
     "category": "Icons",
     "title": "Online Web Icon",
-    "description": " YOU NEXT A THE ICONS OF WEB PROJECT STARTS HERE!",
+    "description": "YOU NEXT A THE ICONS OF WEB PROJECT STARTS HERE!",
     "link": "https://www.onlinewebfonts.com/icon/",
     "license": "Freemium"
   },
@@ -394,7 +394,7 @@
   {
     "id": 50,
     "category": "Icons",
-    "title": "Google Material Icons ",
+    "title": "Google Material Icons",
     "description": "Material Icons are available in five styles and a range of downloadable sizes and densities. The icons are based on the core Material Design principles and metrics.",
     "link": "https://fonts.google.com/icons?selected=Material+Icons",
     "license": "Freemium"
@@ -403,7 +403,7 @@
     "id": 51,
     "category": "Icons",
     "title": "Line Icon",
-    "description": "Line Icons categorized into different categories - select, view edit, download SVG and start using ",
+    "description": "Line Icons categorized into different categories - select, view edit, download SVG and start using",
     "link": "https://lineicons.com/icons/",
     "license": "Freemium"
   },
@@ -414,7 +414,6 @@
     "description": "Jam icons is a set of SVG icons designed for web projects",
     "link": "https://jam-icons.com/",
     "license": "Freemium"
-
   },
   {
     "id": 53,
@@ -435,7 +434,7 @@
   {
     "id": 55,
     "category": "Illustrations",
-    "title": "Icon scout Illustration ",
+    "title": "Icon scout Illustration",
     "description": "Access the world's largest Design Ecosystem: Assets, Integrations, and Motion.",
     "link": "https://iconscout.com/illustrations",
     "license": "Freemium"
@@ -468,7 +467,7 @@
     "id": 59,
     "category": "Icons",
     "title": "icon horse",
-    "description": "Confidently use Icon Horse and get bulletproof favicons with fallbacks if no icon exists.", 
+    "description": "Confidently use Icon Horse and get bulletproof favicons with fallbacks if no icon exists.",
     "link": "https://icon.horse",
     "license": "Freemium"
   },
@@ -540,7 +539,7 @@
     "id": 68,
     "category": "Icons",
     "title": "Circum Icons",
-    "description": " Consistent open source icons for React, Vue and Svelte ",
+    "description": "Consistent open source icons for React, Vue and Svelte",
     "link": "https://circumicons.com",
     "license": "Freemium"
   },
@@ -548,7 +547,7 @@
     "id": 69,
     "category": "Icons",
     "title": "Boxicons",
-    "description": "  High Quality Web Icons Simple Open Source icons carefully crafted for designers & developers",
+    "description": "High Quality Web Icons Simple Open Source icons carefully crafted for designers & developers",
     "link": "https://boxicons.com",
     "license": "Freemium"
   },
@@ -564,14 +563,14 @@
     "id": 71,
     "category": "Illustrations",
     "title": "Smash illustrations",
-    "description": "Awesome illustration constructor with colorful and trendy characters ",
+    "description": "Awesome illustration constructor with colorful and trendy characters",
     "link": "https://usesmash.com/",
     "license": "Freemium"
   },
   {
     "id": 72,
     "category": "Illustrations",
-    "title": " Uihut Illustrations",
+    "title": "Uihut Illustrations",
     "description": "UI Kit, illustration and graphics",
     "link": "https://www.uihut.com/illustrations",
     "license": "Freemium"
@@ -579,7 +578,7 @@
   {
     "id": 73,
     "category": "Icons",
-    "title": " Uihut Icons",
+    "title": "Uihut Icons",
     "description": "Open-source CSS, SVG and Figma UI Icons Available in SVG Sprite",
     "link": "https://www.uihut.com/icons",
     "license": "Freemium"
@@ -588,7 +587,7 @@
     "id": 74,
     "category": "Mobile App",
     "title": "Uihut Mobile App Design",
-    "description": " App Designs ",
+    "description": "App Designs",
     "link": "https://www.uihut.com/mobile-app-designs",
     "license": "Freemium"
   },
@@ -596,7 +595,7 @@
     "id": 75,
     "category": "Illustrations",
     "title": "Uihut 3D illustration",
-    "description": "6 3D illustration design for you",
+    "description": "3D illustration design for you",
     "link": "https://www.uihut.com/3d-illustrations",
     "license": "Freemium"
   },
@@ -604,7 +603,7 @@
     "id": 76,
     "category": "Illustrations",
     "title": "Flexiple",
-    "description": " Royalty free Vector Illustrations for Commercial Use ",
+    "description": "Royalty free Vector Illustrations for Commercial Use",
     "link": "https://flexiple.com/illustrations/",
     "license": "Freemium"
   },
@@ -612,7 +611,7 @@
     "id": 77,
     "category": "Illustrations",
     "title": "Isometric Love illustration",
-    "description": " Cute Isometric Objects For Your Design",
+    "description": "Cute Isometric Objects For Your Design",
     "link": "https://isometriclove.com/",
     "license": "Freemium"
   },
@@ -620,7 +619,7 @@
     "id": 78,
     "category": "Illustrations",
     "title": "Iradesign illustrations",
-    "description": " Discover IRA illustrations to power up your project.",
+    "description": "Discover IRA illustrations to power up your project.",
     "link": "https://iradesign.io/gallery/illustrations",
     "license": "Freemium"
   },
@@ -628,7 +627,7 @@
     "id": 79,
     "category": "Illustrations",
     "title": "Interfacer Illustrations",
-    "description": " Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet ",
+    "description": "Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet",
     "link": "https://interfacer.xyz",
     "license": "Freemium"
   },
@@ -636,7 +635,7 @@
     "id": 80,
     "category": "Icons",
     "title": "Interfacer Icons",
-    "description": " Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet ",
+    "description": "Interfacer is a collection of high quality free Design Resources created by the most talented and awesome people on the Internet.",
     "link": "https://interfacer.xyz",
     "license": "Freemium"
   },
@@ -644,7 +643,7 @@
     "id": 81,
     "category": "Illustrations",
     "title": "Artify Illustrations",
-    "description": " illustrations from the Artify library directly inside Figma ",
+    "description": "Illustrations from the Artify library directly inside Figma",
     "link": "https://www.artify.co/vector-illustrations",
     "license": "Freemium"
   },
@@ -652,7 +651,7 @@
     "id": 82,
     "category": "Illustrations",
     "title": "Freellustrations",
-    "description": " Collection of high-resolution vector or illustrations background images for modern websites and landing pages  ",
+    "description": "Collection of high-resolution vector or illustrations background images for modern websites and landing pages",
     "link": "https://www.freellustrations.com",
     "license": "Freemium"
   },
@@ -660,11 +659,8 @@
     "id": 83,
     "category": "Illustrations",
     "title": "error404",
-    "description": " Royalty free illustrations for 404 pages    ",
+    "description": "Royalty free illustrations for 404 pages.",
     "link": "https://error404.fun",
     "license": "Freemium"
   }
 ]
-
-
-
