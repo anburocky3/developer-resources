@@ -304,7 +304,7 @@
     "license": "Premium"
   },
   {
-    "id": 39 ,
+    "id": 39,
     "category": "Illustrations",
     "title": "ManyPixels",
     "description": "Discover new illustrations every week. Use them on your landing pages, blog posts, newsletters, social media graphics and more!",
@@ -312,12 +312,12 @@
     "license": "Freemium"
   },
   {
-    "id":40 ,
+    "id": 40,
     "category": "Illustrations",
     "title": "Open Peeps",
     "description": "A hand-drawn illustration library.",
     "link": "https://www.openpeeps.com/",
-    "license": "Freemium, Premium"
+    "license": "Freemium"
   },
   {
     "id": 41,

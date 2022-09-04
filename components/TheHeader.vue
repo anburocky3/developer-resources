@@ -106,6 +106,16 @@ const changeLang = (lang: string) => {
                 >{{ $t('appIdeas') }}
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink
+                :to="{ name: 'hosting' }"
+                class="font-medium hover:text-orange-500 dark:text-white hover:dark:text-orange-500"
+                :class="{
+                  '!text-orange-500': isRouteActive('hosting*')
+                }"
+                >{{ $t('hosting') }}
+              </NuxtLink>
+            </li>
           </ul>
           <OnClickOutside
             @trigger="closeDialog"

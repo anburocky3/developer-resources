@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "category": "JS/NodeJS",
+    "title": "Github Pages",
+    "description": "Hosted directly from your GitHub repository. Just edit, push, and your changes are live.",
+    "link": "https://pages.github.com/",
+    "license": "Free"
+  },
+  {
+    "id": 2,
+    "category": "JS/NodeJS",
+    "title": "Netlify",
+    "description": "The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web.",
+    "link": "https://netlify.com",
+    "license": "Free"
+  },
+  {
+    "id": 3,
+    "category": "JS/NodeJS",
+    "title": "Vercel",
+    "description": "Vercel combines the best developer experience with an obsessive focus on end-user performance.",
+    "link": "https://vercel.com",
+    "license": "Free"
+  },
+  {
+    "id": 4,
+    "category": "JS/NodeJS",
+    "title": "DigitalOcean - App Platform",
+    "description": "Build, deploy, and scale apps quickly using a simple, fully-managed solution. We’ll handle the infrastructure, app runtimes, and dependencies so you can focus on your code and launch your app efficiently.",
+    "link": "https://www.digitalocean.com/products/app-platform",
+    "license": "Free"
+  }
+]
