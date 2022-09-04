@@ -127,7 +127,7 @@ const filterIdeas = () => {
 </script>
 
 <template>
-  <div class="mt-10 p-5 sm:p-10">
+  <div class="mt-10 p-5 sm:p-10 md:mt-5">
     <div
       class="container mx-auto my-10 flex flex-col justify-center gap-10 sm:my-20 sm:flex-row sm:p-0"
     >
@@ -244,6 +244,12 @@ const filterIdeas = () => {
         </a>
       </div>
       <div class="flex-1">
+        <p class="mb-4 text-sm italic">
+          Showing
+          <span class="font-bold text-orange-500"> {{ Ideas.length }}</span>
+          resources out of
+          <span class="font-bold text-orange-500"> {{ ideas.length }}</span>
+        </p>
         <CardsIdeaList v-for="(idea, i) in Ideas" :key="i" :idea="idea" />
       </div>
     </div>
