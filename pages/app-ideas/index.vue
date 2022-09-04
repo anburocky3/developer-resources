@@ -244,7 +244,7 @@ const filterIdeas = () => {
         </a>
       </div>
       <div class="flex-1">
-        <p class="mb-4 text-sm italic">
+        <p class="mb-4 text-sm italic dark:text-white">
           Showing
           <span class="font-bold text-orange-500"> {{ Ideas.length }}</span>
           resources out of
