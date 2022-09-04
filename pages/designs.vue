@@ -29,7 +29,12 @@ const categoryWithCount = computed(() => {
 
     const finalName = `${category.name} (${resourceCount})`
 
-    return { id: category.id, key: category.name, name: finalName }
+    return {
+      id: category.id,
+      key: category.name,
+      name: finalName,
+      count: resourceCount
+    }
   })
 })
 
@@ -65,7 +70,7 @@ const filteredResources = computed(() => {
 </script>
 
 <template>
-  <div class="mt-10 px-2 sm:p-10">
+  <div class="mt-10 px-2 sm:p-10 md:mt-5">
     <div
       class="container mx-auto my-10 rounded bg-white p-5 dark:bg-gray-800 dark:text-white lg:my-20"
     >
@@ -117,9 +122,23 @@ const filteredResources = computed(() => {
             :title="productCategory.name"
           />
         </div>
+
         <div
           class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
+          <p
+            v-if="searchKey != ''"
+            class="col-span-1 -mb-28 text-sm italic sm:col-span-2 md:col-span-3 lg:col-span-4 dark:text-white"
+          >
+            Showing
+            <span class="font-bold text-orange-500">
+              {{ filteredResources.length }}</span
+            >
+            resources out of
+            <span class="font-bold text-orange-500">
+              {{ resources.length }}</span
+            >
+          </p>
           <CardsResourceCard
             v-for="resource in filteredResources"
             :key="resource.id"
