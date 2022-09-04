@@ -120,6 +120,19 @@ const filteredhosting = computed(() => {
         <div
           class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
+          <p
+            v-if="searchKey != ''"
+            class="col-span-1 -mb-28 text-sm italic sm:col-span-2 md:col-span-3 lg:col-span-4 dark:text-white"
+          >
+            Showing
+            <span class="font-bold text-orange-500">
+              {{ filteredhosting.length }}</span
+            >
+            resources out of
+            <span class="font-bold text-orange-500">
+              {{ hosting.length }}</span
+            >
+          </p>
           <CardsResourceCard
             v-for="hosting in filteredhosting"
             :key="hosting.id"
