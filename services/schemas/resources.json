@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Welcome8Element"
+  },
+  "uniqueItems": true,
+  "definitions": {
+    "Welcome8Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "The unique identifier of that resource."
+        },
+        "category": {
+          "$ref": "#/definitions/Category"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "qt-uri-protocols": ["https"]
+        },
+        "license": {
+          "$ref": "#/definitions/License"
+        }
+      },
+      "required": ["category", "description", "id", "license", "link", "title"],
+      "title": "Welcome8Element",
+      "description": "Design Resources description"
+    },
+    "Category": {
+      "type": "string",
+      "enum": [
+        "Web App",
+        "Illustrations",
+        "Icons",
+        "Stock Photos",
+        "Mobile App",
+        "Tools"
+      ],
+      "title": "Category"
+    },
+    "License": {
+      "type": "string",
+      "enum": ["Freemium", "Free", "Premium", "Freemium and Premium"],
+      "title": "License"
+    }
+  }
+}
