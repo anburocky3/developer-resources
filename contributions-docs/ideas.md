@@ -2,7 +2,7 @@
 
 1. Add your ideas in `services/ideas.json`. You can find the format below.
 
-```json
+```jsonc
   {
     "id": 20, //increment accordingly, (manually put latest number)
     "title": "Idea Title", // put the idea title short and meaningful (check example below)
@@ -20,7 +20,7 @@
 
 ### Example:
 
-```json
+```jsonc
   {
     "id": 20, //increment accordingly
     "title": "Simple Calculator with Addition, Subtraction & Multiply operations",

@@ -2,7 +2,7 @@
 
 1. Add your resource in `services/hosting.json`. You can find the format below.
 
-```json
+```jsonc
   {
     "id": 1,  //increment accordingly
     "category": "JS/NodeJS", // JS/NodeJS | PHP | Python

@@ -3,7 +3,7 @@
 1. Add your resource in `services/resources.json`. You can find the format
    below.
 
-```json
+```jsonc
  {
     "id": 16, //increment accordingly
     "category": "Icons", // (Icons, Illustrations, Web App, Mobile App, Stock Photos, Tools)

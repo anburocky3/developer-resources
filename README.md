@@ -24,30 +24,20 @@ icons, template ui, illustration, etc. Feel free to browse around.
 
 ## 😎 Okay! How to Contribute?
 
-1. [Fork this repository](https://github.com/anburocky3/developer-resources/fork)
-2. Add your resource in `services/resources.json`. You can find the format
-   below.
+1. [Fork this repository](https://github.com/anburocky3/developer-resources/fork),
+   check this [contribution guide](./CONTRIBUTING.md).
 
-```jsonc
- {
-    "id": 16, //increment accordingly
-    "category": "Icons", // (Icons, Illustrations, Web App, Mobile App, Stock Photos)
-    "title": "svgporn.com", // specify the clear title
-    "description": "SVG logos for developers, designers, bloggers, geeks and more", // with description
-    "link": "https://svgporn.com/", // share the website link
-    "license": "Free" // specify is this fully free or freemium (Free + Buy as you go)
-  },
-```
-
-3. Commit and push! 😊👍
+| Type      | Contribution Guide                                       | Page                                            |
+| --------- | -------------------------------------------------------- | ----------------------------------------------- |
+| Design    | [Contribution PR Guide](./contributions-docs/design.md)  | https://devfree-resources.netlify.app/designs   |
+| App-Ideas | [Contribution PR Guide](./contributions-docs/ideas.md)   | https://devfree-resources.netlify.app/app-ideas |
+| Hosting   | [Contribution PR Guide](./contributions-docs/hosting.md) | https://devfree-resources.netlify.app/hosting   |
 
 ### Author:
 
-[Anbuselvan Rocky](https://bit.ly/AnbuselvanRockyFB)
+- [Anbuselvan Rocky](https://bit.ly/AnbuselvanRockyFB)
 
-### Contributors:
-
-- No one, feel free to add your known resources. 😁
+- [Our valuable Contributors:](https://devfree-resources.netlify.app/contributors)
 
 ### License:
 

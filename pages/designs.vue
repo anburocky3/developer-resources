@@ -128,7 +128,7 @@ const filteredResources = computed(() => {
         >
           <p
             v-if="searchKey != ''"
-            class="col-span-1 -mb-28 text-sm italic sm:col-span-2 md:col-span-3 lg:col-span-4 dark:text-white"
+            class="col-span-1 -mb-28 text-sm italic dark:text-white sm:col-span-2 md:col-span-3 lg:col-span-4"
           >
             Showing
             <span class="font-bold text-orange-500">
