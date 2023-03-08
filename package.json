@@ -8,6 +8,7 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,json,vue}\""
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.9.1",
     "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxt/types": "^2.16.0",
     "@nuxtjs/color-mode": "^3.2.0",
@@ -28,6 +29,6 @@
     "prettier-plugin-tailwindcss": "^0.2.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5",
-    "vue-i18n": "9.2.2"
+    "vue-i18n": "9"
   }
 }

@@ -6,6 +6,9 @@ import { useI18n } from 'vue-i18n'
 import { isRouteActive } from '~/utils/global'
 
 const i18n = useI18n()
+// const i18n = {}
+console.log(i18n)
+
 const globalStore = useStore()
 
 const route = useRoute()
@@ -150,20 +153,18 @@ const changeLang = (lang: string) => {
                 v-if="isThemeDialogOpened"
                 class="absolute top-10 -right-10 overflow-hidden rounded bg-white shadow"
               >
-                <ColorScheme placeholder="..." tag="li">
-                  <li
-                    v-for="color of ['light', 'dark']"
-                    :key="color"
-                    class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
-                    :class="{
-                      '!bg-orange-500 text-white ':
-                        !$colorMode.unknown && color === $colorMode.preference
-                    }"
-                    @click="changeTheme(color)"
-                  >
-                    {{ $t(`${color}`) }}
-                  </li>
-                </ColorScheme>
+                <li
+                  v-for="color of ['light', 'dark']"
+                  :key="color"
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
+                  :class="{
+                    '!bg-orange-500 text-white ':
+                      !$colorMode.unknown && color === $colorMode.preference
+                  }"
+                  @click="changeTheme(color)"
+                >
+                  {{ $t(`${color}`) }}
+                </li>
               </ul>
             </div>
             <div class="relative">
@@ -191,26 +192,24 @@ const changeLang = (lang: string) => {
                 v-if="isLangDialogOpened"
                 class="absolute top-10 -right-10 overflow-hidden rounded bg-white shadow"
               >
-                <ColorScheme placeholder="..." tag="li">
-                  <li
-                    class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
-                    :class="{
-                      '!bg-orange-500 text-white ': i18n.locale.value === 'en'
-                    }"
-                    v-on:click="changeLang('en')"
-                  >
-                    English
-                  </li>
-                  <li
-                    class="flex w-32 cursor-pointer space-x-4 px-4 py-2 font-malar capitalize tracking-widest text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
-                    :class="{
-                      '!bg-orange-500 text-white': i18n.locale.value === 'ta'
-                    }"
-                    v-on:click="changeLang('ta')"
-                  >
-                    {{ $t('tamil') }}
-                  </li>
-                </ColorScheme>
+                <li
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 capitalize text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
+                  :class="{
+                    '!bg-orange-500 text-white ': i18n.locale.value === 'en'
+                  }"
+                  v-on:click="changeLang('en')"
+                >
+                  English
+                </li>
+                <li
+                  class="flex w-32 cursor-pointer space-x-4 px-4 py-2 font-malar capitalize tracking-widest text-gray-800 hover:bg-indigo-400 hover:text-white dark:bg-gray-700 dark:text-white hover:dark:bg-gray-800"
+                  :class="{
+                    '!bg-orange-500 text-white': i18n.locale.value === 'ta'
+                  }"
+                  v-on:click="changeLang('ta')"
+                >
+                  {{ $t('tamil') }}
+                </li>
               </ul>
             </div>
 

@@ -6,11 +6,12 @@ import {
   shareInTwitter,
   shareInLinkedIn
 } from '@/utils/global'
+import { Idea } from '~~/types/global'
 
 const route = useRoute()
 
 // find idea by route id
-const idea = ideas.find((idea) => idea.id.toString() === route.params.id)
+const idea = <Idea>ideas.find((idea) => idea.id.toString() === route.params.id)
 
 useHead({
   title: `${idea.technology[0]} - ${idea.title}`
@@ -36,6 +37,18 @@ useHead({
           <p class="text-sm text-gray-200 sm:text-base">
             {{ idea.description }}
           </p>
+          <div
+            class="rounded bg-indigo-900 p-5 text-xs font-semibold dark:bg-gray-700"
+            v-if="idea.link"
+          >
+            Link:
+            <a
+              :href="idea.link"
+              class="ml-2 text-blue-500 hover:text-blue-600"
+              target="_blank"
+              >{{ idea.link }}</a
+            >
+          </div>
           <div
             class="!mt-5 flex flex-col items-center space-x-5 space-y-5 sm:flex-row sm:space-y-0"
           >

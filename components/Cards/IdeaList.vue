@@ -51,11 +51,14 @@ const addToFavourite = (id: number) => {
             <p class="text-sm text-gray-700 line-clamp-2 dark:text-gray-500">
               {{ idea.description }}
             </p>
-            <div class="bg-blue-50 p-5 text-xs font-semibold" v-if="idea.link">
+            <div
+              class="rounded bg-blue-50 p-5 text-xs font-semibold dark:bg-gray-700"
+              v-if="idea.link"
+            >
               Link:
               <a
                 :href="idea.link"
-                class="text-blue-500 hover:text-blue-600"
+                class="ml-2 text-blue-500 hover:text-blue-600"
                 target="_blank"
                 >{{ idea.link }}</a
               >
