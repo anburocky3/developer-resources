@@ -159,7 +159,8 @@
     "technology": ["PHP", "Javascript"],
     "difficulty": "easy",
     "time_taken": 30,
-    "source": ""
+    "source": "",
+    "link": "https://i.ytimg.com/vi/[VIDEO_ID]/maxresdefault.jpg"
   },
   {
     "id": 19,
@@ -168,6 +169,17 @@
     "technology": ["PHP", "Javascript"],
     "difficulty": "easy",
     "time_taken": 20,
-    "source": ""
+    "source": "",
+    "link": "https://ipv4.icanhazip.com/"
+  },
+  {
+    "id": 20,
+    "title": "English to Tamil Translater",
+    "description": "Build a form with necessary fields and after entering input field, it should translate your english word into tamil word. API: https://transservice.ecinet.in/api/Transliteration/GetSuggestions?transliteration=NAME&itext=ANBUSELVAN&locale=tm_in",
+    "technology": ["API", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": "https://transservice.ecinet.in/api/Transliteration/GetSuggestions?transliteration=NAME&itext=ANBUSELVAN&locale=tm_in"
   }
 ]

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;500;600;700;800&display=swap');
 
 * {
-    @apply transition-[background-color] duration-300;
+  @apply transition-[background-color] duration-300;
 }
 
 @tailwind base;

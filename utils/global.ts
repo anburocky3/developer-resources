@@ -39,8 +39,13 @@ export const getHostingImage = (category: string): string => {
 }
 
 export const minToHour = (minute: number) => {
-  const hour = minute / 60
-  return hour === 1 ? `${hour} hr` : `${hour} hrs`
+  const hour = parseFloat((minute / 60).toFixed(2))
+
+  if (minute <= 60) {
+    return `${minute} mins`
+  } else {
+    return hour === 1 ? `${hour} hr` : `${hour} hrs`
+  }
 }
 
 export const hourFormat = (hour: number) => {
@@ -49,15 +54,7 @@ export const hourFormat = (hour: number) => {
 
 export const isRouteActive = (expression: string) => {
   const route = useRoute()
-  return route.name.toString().match(expression) ? true : false
-
-  // if(n === true){
-  //   return true
-  // }
-  // else {
-  //   return false
-  // }
-  // return n
+  return route.name?.toString().match(expression) ? true : false
 }
 
 export const shareInWhatsApp = (idea: Idea) => {

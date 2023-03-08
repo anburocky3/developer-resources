@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { computed, reactive, onMounted } from 'vue'
 import { useStore } from '@/stores'
-import ideas from '@/services/ideas.json'
+import ideasList from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
 
-const Ideas = useState('Ideas', () => ideas)
+const ideas = useState('Ideas', () =>
+  ideasList.sort((a, b) => {
+    return b.id - a.id
+  })
+)
+
 const techFilters = useState('techFilters', () => [])
 
 onMounted(() => {
@@ -68,7 +73,7 @@ const filterIdeas = () => {
   let durRes = []
   let srcRes = []
   if (techFilters.value.length > 0) {
-    techRes = ideas.filter((i) => {
+    techRes = ideasList.filter((i) => {
       return (
         i.technology.filter((t) => {
           return techFilters.value.includes(t)
@@ -76,53 +81,53 @@ const filterIdeas = () => {
       )
     })
   } else {
-    techRes = ideas
+    techRes = ideasList
   }
   if (filters.difficulty !== '') {
     if (filters.difficulty === '1') {
-      diffRes = ideas.filter((i) => {
+      diffRes = ideasList.filter((i) => {
         return i.difficulty === 'easy'
       })
     }
     if (filters.difficulty === '2') {
-      diffRes = ideas.filter((i) => {
+      diffRes = ideasList.filter((i) => {
         return i.difficulty === 'medium'
       })
     }
     if (filters.difficulty === '3') {
-      diffRes = ideas.filter((i) => {
+      diffRes = ideasList.filter((i) => {
         return i.difficulty === 'hard'
       })
     }
     if (filters.difficulty === '0') {
-      diffRes = ideas
+      diffRes = ideasList
     }
   }
   if (filters.challengeDuration !== '0') {
-    durRes = ideas.filter((i) => {
+    durRes = ideasList.filter((i) => {
       return i.time_taken === parseInt(filters.challengeDuration) * 60
     })
   } else {
-    durRes = ideas
+    durRes = ideasList
   }
   if (filters.showSource !== '-') {
     if (filters.showSource === 'no') {
-      srcRes = ideas.filter((i) => {
+      srcRes = ideasList.filter((i) => {
         return i.source === ''
       })
     } else {
-      srcRes = ideas.filter((i) => {
+      srcRes = ideasList.filter((i) => {
         return i.source !== ''
       })
     }
   } else {
-    srcRes = ideas
+    srcRes = ideasList
   }
   let res = techRes
     .filter((e) => diffRes.includes(e))
     .filter((e) => durRes.includes(e))
     .filter((e) => srcRes.includes(e))
-  Ideas.value = res
+  ideas.value = res
 }
 </script>
 
@@ -246,11 +251,11 @@ const filterIdeas = () => {
       <div class="flex-1">
         <p class="mb-4 text-sm italic dark:text-white">
           Showing
-          <span class="font-bold text-orange-500"> {{ Ideas.length }}</span>
-          resources out of
           <span class="font-bold text-orange-500"> {{ ideas.length }}</span>
+          resources out of
+          <span class="font-bold text-orange-500"> {{ ideasList.length }}</span>
         </p>
-        <CardsIdeaList v-for="(idea, i) in Ideas" :key="i" :idea="idea" />
+        <CardsIdeaList v-for="(idea, i) in ideas" :key="i" :idea="idea" />
       </div>
     </div>
   </div>

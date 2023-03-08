@@ -6,6 +6,7 @@ import {
   shareInTwitter,
   shareInLinkedIn
 } from '@/utils/global'
+
 defineProps<{
   idea: Idea
 }>()
@@ -14,7 +15,7 @@ const addToFavourite = (id: number) => {
   // get favorite list
   const existing = localStorage.getItem('idea_favourites')
 
-  const existingObj = JSON.parse(existing)
+  const existingObj = JSON.parse(existing!)
   existingObj.push(id)
   localStorage.setItem('idea_favourites', JSON.stringify(existingObj))
 
@@ -50,6 +51,15 @@ const addToFavourite = (id: number) => {
             <p class="text-sm text-gray-700 line-clamp-2 dark:text-gray-500">
               {{ idea.description }}
             </p>
+            <div class="bg-blue-50 p-5 text-xs font-semibold" v-if="idea.link">
+              Link:
+              <a
+                :href="idea.link"
+                class="text-blue-500 hover:text-blue-600"
+                target="_blank"
+                >{{ idea.link }}</a
+              >
+            </div>
           </div>
 
           <div class="flex space-x-4">

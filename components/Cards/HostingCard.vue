@@ -13,13 +13,9 @@ defineProps<{
     class="dark:shadsow-none relative mx-auto w-full overflow-hidden rounded bg-white !font-sans shadow hover:shadow-xl dark:bg-slate-900 dark:hover:shadow-md dark:hover:shadow-gray-800"
     :title="resource.description"
   >
-    <!-- src="https://designresources.io/wp-content/uploads/2022/03/Frame-366-1024x774.jpg" -->
-    <!-- <nuxt-img
-      src="https://designresources.io/wp-content/uploads/2022/03/Frame-366-1024x774.jpg"
-    /> -->
     <nuxt-img
       v-if="!resource.img"
-      :src="getCategoryImage(resource.category)"
+      :src="getHostingImage(resource.category)"
       alt="Resource image"
       class="border-b-5 h-44 w-full border-indigo-500 object-cover shadow"
     />

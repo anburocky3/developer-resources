@@ -7,6 +7,7 @@ import ta from '../locales/ta.json'
 
 // const i18n = createI18n<[MessageSchema], "en" | "ta">({
 const i18n = createI18n({
+  legacy: false,
   locale: 'en',
   globalInjection: true,
   fallbackLocale: 'en',
