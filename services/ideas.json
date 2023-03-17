@@ -181,5 +181,35 @@
     "time_taken": 10,
     "source": "",
     "link": "https://transservice.ecinet.in/api/Transliteration/GetSuggestions?transliteration=NAME&itext=ANBUSELVAN&locale=tm_in"
+  },
+  {
+    "id": 21,
+    "title": "Dictionary web app",
+    "description": "In this project, you'll integrate with the Dictionary API to create a real-world dictionary web app. Additional tests include colour themes and font selection. https://dictionaryapi.dev/",
+    "technology": ["API", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": "https://dictionaryapi.dev"
+  },
+  {
+    "id": 22,
+    "title": "GitHub user search app",
+    "description": "In this project, you'll use the GitHub users API to pull profile data and display it. It's a great challenge if you're looking to practice working with a 3rd-party API.",
+    "technology": ["API", "Javascript"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://docs.github.com/en/rest/users/users#get-a-user"
+  },
+  {
+    "id": 23,
+    "title": "Tip calculator app",
+    "description": "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": ""
   }
 ]
