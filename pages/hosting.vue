@@ -4,17 +4,24 @@ import hostingCategories from '@/services/hostingCategories.json'
 import hosting from '@/services/hosting.json'
 import { onMounted } from 'vue'
 onMounted(() => {
+  scrollToTop(0)
+})
+
+function scrollToTop(top: number) {
   window.scrollTo({
-    top: 0,
+    top: top,
     behavior: 'smooth'
   })
-})
+}
 
 definePageMeta({
   title: 'Hosting Guides'
 })
 const selectedCategory = ref('All Hosting')
 const searchKey = ref('')
+const page = ref(1)
+const itemsPerPage = ref(12)
+
 const categoryWithCount = computed(() => {
   return hostingCategories.map((category) => {
     let hostingCount = 0
@@ -62,6 +69,13 @@ const filteredhosting = computed(() => {
     }
   }
 })
+
+function paginate() {
+  scrollToTop(200)
+  let startIndex: number = (page.value - 1) * itemsPerPage.value
+  let endIndex: number = startIndex + itemsPerPage.value
+  return { startIndex, endIndex }
+}
 </script>
 
 <template>
@@ -110,6 +124,7 @@ const filteredhosting = computed(() => {
       <div class="mx-auto w-full space-y-10 sm:max-w-6xl sm:p-10">
         <div class="space-x-0 space-y-4 text-center sm:space-x-5 xl:space-y-0">
           <ChipList
+            @click="() => (page = 1)"
             v-for="productCategory in categoryWithCount"
             :key="productCategory.id"
             v-model="selectedCategory"
@@ -132,11 +147,20 @@ const filteredhosting = computed(() => {
             <span class="font-bold text-orange-500"> {{ hosting.length }}</span>
           </p>
           <CardsHostingCard
-            v-for="hosting in filteredhosting"
+            v-for="hosting in filteredhosting.slice(
+              paginate().startIndex,
+              paginate().endIndex
+            )"
             :key="hosting.id"
             :resource="hosting"
           />
         </div>
+        <PaginationPage
+          :noOfItems="filteredhosting.length"
+          :items-per-page="itemsPerPage"
+          :pageNo="page"
+          v-model="page"
+        />
       </div>
     </div>
   </div>

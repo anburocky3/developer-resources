@@ -12,7 +12,7 @@
     <!-- <div> {{ pageNo }} </div> -->
     <div class="Next">
       <button
-        v-if="Math.trunc(noOfItems / 10) > pageNo - 1"
+        v-if="Math.trunc(noOfItems / itemsPerPage) > pageNo - 1"
         @click="$emit('update:modelValue', pageNo + 1)"
         class="NextPrevButton NextButton rounded bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 sm:w-fit sm:text-base"
       >
@@ -26,6 +26,7 @@
 defineProps<{
   noOfItems: number
   pageNo: number
+  itemsPerPage: number
 }>()
 </script>
 <style>
