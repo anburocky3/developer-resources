@@ -4,10 +4,7 @@ import productCategories from '@/services/category.json'
 import resources from '@/services/resources.json'
 import { onMounted } from 'vue'
 onMounted(() => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
+  scrollToTop(0)
 })
 
 definePageMeta({
@@ -15,6 +12,14 @@ definePageMeta({
 })
 const selectedCategory = ref('All Products')
 const searchKey = ref('')
+const page = ref(1)
+const itemsPerPage = ref(12)
+function scrollToTop(top: number) {
+  window.scrollTo({
+    top: top,
+    behavior: 'smooth'
+  })
+}
 const categoryWithCount = computed(() => {
   return productCategories.map((category) => {
     let resourceCount = 0
@@ -67,6 +72,13 @@ const filteredResources = computed(() => {
     }
   }
 })
+
+function paginate() {
+  scrollToTop(200)
+  let startIndex: number = (page.value - 1) * itemsPerPage.value
+  let endIndex: number = startIndex + itemsPerPage.value
+  return { startIndex, endIndex }
+}
 </script>
 
 <template>
@@ -85,6 +97,7 @@ const filteredResources = computed(() => {
         </div>
         <div class="flex justify-center">
           <input
+            @input="() => (page != 1 ? (page = 1) : '')"
             v-model="searchKey"
             type="text"
             :placeholder="$t('searchByAnything')"
@@ -115,6 +128,7 @@ const filteredResources = computed(() => {
       <div class="mx-auto w-full space-y-10 sm:max-w-6xl sm:p-10">
         <div class="space-x-0 space-y-4 text-center sm:space-x-5 xl:space-y-0">
           <ChipList
+            @click="() => (page = 1)"
             v-for="productCategory in categoryWithCount"
             :key="productCategory.id"
             v-model="selectedCategory"
@@ -140,11 +154,19 @@ const filteredResources = computed(() => {
             >
           </p>
           <CardsResourceCard
-            v-for="resource in filteredResources"
+            v-for="resource in filteredResources.slice(
+              paginate().startIndex,
+              paginate().endIndex
+            )"
             :key="resource.id"
             :resource="resource"
           />
         </div>
+        <PaginationPage
+          :noOfItems="filteredResources.length"
+          :pageNo="page"
+          v-model="page"
+        />
       </div>
     </div>
   </div>

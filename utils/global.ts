@@ -13,7 +13,7 @@ export const getCategoryImage = (category: string): string => {
     case 'Stock Photos':
       return 'https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg'
     case 'Tools':
-      return 'https://element5digital.com/wp-content/uploads/2019/06/design-tools-featured-img-copy.jpg'
+      return 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'
     default:
       return 'https://media.istockphoto.com/vectors/error-404-page-not-found-vector-id673101428?k=20&m=673101428&s=170667a&w=0&h=sifFCXQls5ygak3Y-II0cI1tibgQZVyPWzpLHtHKOGg='
   }
@@ -32,7 +32,7 @@ export const getHostingImage = (category: string): string => {
     case 'Stock Photos':
       return 'https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg'
     case 'Tools':
-      return 'https://element5digital.com/wp-content/uploads/2019/06/design-tools-featured-img-copy.jpg'
+      return 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'
     default:
       return 'https://media.istockphoto.com/vectors/error-404-page-not-found-vector-id673101428?k=20&m=673101428&s=170667a&w=0&h=sifFCXQls5ygak3Y-II0cI1tibgQZVyPWzpLHtHKOGg='
   }
