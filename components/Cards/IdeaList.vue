@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Idea } from '@/types/global'
+import type { Idea } from '@/types/global'
 import {
   minToHour,
   shareInWhatsApp,
