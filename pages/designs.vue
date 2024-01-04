@@ -164,6 +164,7 @@ function paginate() {
         </div>
         <PaginationPage
           :noOfItems="filteredResources.length"
+          :items-per-page="itemsPerPage"
           :pageNo="page"
           v-model="page"
         />

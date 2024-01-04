@@ -3,21 +3,26 @@ import { computed, reactive, onMounted } from 'vue'
 import { useStore } from '@/stores'
 import ideasList from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
+import { Idea } from '~~/types/global'
 
 const ideas = useState('Ideas', () =>
   ideasList.sort((a, b) => {
     return b.id - a.id
-  })
+  }) as Idea[]
 )
 
-const techFilters = useState('techFilters', () => [])
+const techFilters = useState('techFilters', () => [] as string[])
 
 onMounted(() => {
+  scrollToTop(0)
+})
+
+function scrollToTop(top: number) {
   window.scrollTo({
-    top: 0,
+    top: top,
     behavior: 'smooth'
   })
-})
+}
 
 const store = useStore()
 
@@ -30,6 +35,9 @@ const filters = reactive({
 definePageMeta({
   title: 'Realistic App Ideas'
 })
+
+const page = ref(1)
+const itemsPerPage = ref(12)
 
 const getDifficultyRank = computed(() => {
   filterIdeas()
@@ -67,11 +75,18 @@ const filterByTech = (type: string, val: string) => {
   }
 }
 
+function paginate() {
+  scrollToTop(0)
+  let startIndex: number = (page.value - 1) * itemsPerPage.value
+  let endIndex: number = startIndex + itemsPerPage.value
+  return { startIndex, endIndex }
+}
+
 const filterIdeas = () => {
-  let techRes = []
-  let diffRes = []
-  let durRes = []
-  let srcRes = []
+  let techRes : Idea[] = []
+  let diffRes : Idea[] = []
+  let durRes : Idea[] = []
+  let srcRes : Idea[] = []
   if (techFilters.value.length > 0) {
     techRes = ideasList.filter((i) => {
       return (
@@ -128,6 +143,7 @@ const filterIdeas = () => {
     .filter((e) => durRes.includes(e))
     .filter((e) => srcRes.includes(e))
   ideas.value = res
+  page.value = 1
 }
 </script>
 
@@ -255,7 +271,19 @@ const filterIdeas = () => {
           resources out of
           <span class="font-bold text-orange-500"> {{ ideasList.length }}</span>
         </p>
-        <CardsIdeaList v-for="(idea, i) in ideas" :key="i" :idea="idea" />
+        <CardsIdeaList 
+          v-for="(idea, i) in ideas.slice(
+            paginate().startIndex,
+            paginate().endIndex
+          )"
+          :key="i" 
+          :idea="idea" />
+        <PaginationPage
+          :noOfItems="ideas.length"
+          :items-per-page="itemsPerPage"
+          :pageNo="page"
+          v-model="page"
+        />
       </div>
     </div>
   </div>
