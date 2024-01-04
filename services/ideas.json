@@ -211,5 +211,75 @@
     "time_taken": 20,
     "source": "",
     "link": ""
+  },
+  {
+    "id": 24,
+    "title": "Advice Slip JSON API",
+    "description": "This is a really simple advice generator app powered with JavaScript and uses advice slip API to get some random Advice and display it to the user. ",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": ""
+  },
+  {
+    "id": 25,
+    "title": "Get Country by IP Address",
+    "description": "Country is an open-source geolocation API that finds a user's country (and nothing else) from their IP address. It works both with IPv4 and IPv6.",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://api.country.is, https://get.geojs.io/v1/ip/country.json"
+  },
+  {
+    "id": 26,
+    "title": "REST Countries",
+    "description": "Get information about countries via a RESTful API",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://restcountries.com/"
+  },
+  {
+    "id": 27,
+    "title": "Trivia API",
+    "description": "The Open Trivia Database provides a completely free JSON API for use in programming projects. Use of this API does not require a API Key, just generate the URL below use it in your own application to retrieve trivia questions.",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://opentdb.com/api.php?amount=10&type=multiple"
+  },
+  {
+    "id": 28,
+    "title": "Offical Joke API",
+    "description": "Displays jokes from various categories. Check here for more information.",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://official-joke-api.appspot.com/random_joke"
+  },
+  {
+    "id": 29,
+    "title": "Dark Joke API (Multi)",
+    "description": "Programming, Miscellaneous and Dark Jokes. Check here for more information. https://sv443.net/jokeapi/v2/",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://v2.jokeapi.dev/joke/Programming"
+  },
+  {
+    "id": 30,
+    "title": "Dominos Store App",
+    "description": "Display Dominos Stores based on cities. You can practice alot using store data, menu data, deals etc.",
+    "technology": ["Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": "https://api.dominos.co.in/locator-service/ve2/cities/CHENNAI/stores"
   }
 ]

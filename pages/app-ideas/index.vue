@@ -267,7 +267,7 @@ const filterIdeas = () => {
         </a>
       </div>
       <div class="flex-1">
-        <p class="italsic mb-4 rounded bg-gray-800 px-10 py-5 dark:text-white">
+        <p class="italsic mb-4 rounded bg-gray-50 dark:bg-gray-800 px-10 py-5 dark:text-white">
           <span class="font-semibold">Filtered:</span> Showing
           <span class="font-bold text-orange-500"> {{ ideas.length }}</span>
           out of
