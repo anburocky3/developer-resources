@@ -3,12 +3,14 @@ import { computed, reactive, onMounted } from 'vue'
 import { useStore } from '@/stores'
 import ideasList from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
-import { Idea } from '~~/types/global'
+import type {  Idea } from '~~/types/global'
 
-const ideas = useState('Ideas', () =>
-  ideasList.sort((a, b) => {
-    return b.id - a.id
-  }) as Idea[]
+const ideas = useState(
+  'Ideas',
+  () =>
+    ideasList.sort((a, b) => {
+      return b.id - a.id
+    }) as Idea[]
 )
 
 const techFilters = useState('techFilters', () => [] as string[])
@@ -83,10 +85,10 @@ function paginate() {
 }
 
 const filterIdeas = () => {
-  let techRes : Idea[] = []
-  let diffRes : Idea[] = []
-  let durRes : Idea[] = []
-  let srcRes : Idea[] = []
+  let techRes: Idea[] = []
+  let diffRes: Idea[] = []
+  let durRes: Idea[] = []
+  let srcRes: Idea[] = []
   if (techFilters.value.length > 0) {
     techRes = ideasList.filter((i) => {
       return (
@@ -265,19 +267,21 @@ const filterIdeas = () => {
         </a>
       </div>
       <div class="flex-1">
-        <p class="mb-4 text-sm italic dark:text-white">
-          Showing
+        <p class="italsic mb-4 rounded bg-gray-800 px-10 py-5 dark:text-white">
+          <span class="font-semibold">Filtered:</span> Showing
           <span class="font-bold text-orange-500"> {{ ideas.length }}</span>
-          resources out of
+          out of
           <span class="font-bold text-orange-500"> {{ ideasList.length }}</span>
+          ideas!
         </p>
-        <CardsIdeaList 
+        <CardsIdeaList
           v-for="(idea, i) in ideas.slice(
             paginate().startIndex,
             paginate().endIndex
           )"
-          :key="i" 
-          :idea="idea" />
+          :key="i"
+          :idea="idea"
+        />
         <PaginationPage
           :noOfItems="ideas.length"
           :items-per-page="itemsPerPage"

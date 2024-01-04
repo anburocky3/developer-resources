@@ -6,7 +6,7 @@ import {
   shareInTwitter,
   shareInLinkedIn
 } from '@/utils/global'
-import { Idea } from '~~/types/global'
+import { type Idea } from '~~/types/global'
 
 const route = useRoute()
 

@@ -73,10 +73,10 @@ useHead({
         </p>
       </div>
       <div v-else class="space-y-4">
-        <div class="space-y-5 text-gray-800">
+        <div class="space-y-5 text-gray-800 m-20">
           <span
             class="rounded bg-gray-800 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white dark:bg-gray-200 dark:text-black sm:text-base"
-            >#UNKNOWN</span
+            >#UNKNOWN {{  error?.toString() }}</span
           >
           <h2
             class="bg-gradient-to-r from-indigo-500 to-red-500 bg-clip-text text-2xl font-black uppercase text-transparent sm:text-3xl"

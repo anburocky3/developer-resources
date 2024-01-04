@@ -15,7 +15,7 @@ export const useStore = defineStore('globalStore', {
         source: 'https://github.com/anburocky3/developer-resources',
         link: ''
       },
-      technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'Python'],
+      technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'Python', 'API'],
       social: {
         youtube: 'https://bit.ly/cyberdudeYT',
         discord: 'https://bit.ly/cyberdudeDiscord'

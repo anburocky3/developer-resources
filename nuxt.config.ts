@@ -4,12 +4,14 @@ import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
 import path from 'path'
 
 export default defineNuxtConfig({
+  pages: true,
   css: ['~/assets/css/tailwind.css'],
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@nuxt/image-edge'
+    '@nuxt/image-edge',
+    '@nuxt/image'
   ],
   app: {
     head: {
