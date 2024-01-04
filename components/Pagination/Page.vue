@@ -9,7 +9,8 @@
         Prev
       </button>
     </div>
-    <!-- <div> {{ pageNo }} </div> -->
+    <div class="my-auto hidden md:block dark:text-white"> Showing <span class="font-bold text-orange-500">{{ (pageNo-1)*itemsPerPage + 1 }}</span> - <span class="font-bold text-orange-500">{{ pageNo*itemsPerPage > noOfItems ? noOfItems : pageNo*itemsPerPage }}</span> of <span class="font-bold text-orange-500">{{ noOfItems }}</span> entries</div>
+    <div class="my-auto hidden sm:block dark:text-white md:hidden"><span class="font-bold text-orange-500">{{ (pageNo-1)*itemsPerPage + 1 }}</span> - <span class="font-bold text-orange-500">{{ pageNo*itemsPerPage > noOfItems ? noOfItems : pageNo*itemsPerPage }}</span> of <span class="font-bold text-orange-500">{{ noOfItems }}</span> entries</div>
     <div class="Next">
       <button
         v-if="Math.trunc(noOfItems / itemsPerPage) > pageNo - 1"
