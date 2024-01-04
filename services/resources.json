@@ -1041,7 +1041,7 @@
   },
   {
     "id": 131,
-    "category": "Web",
+    "category": "Web App",
     "title": "UI Store Design",
     "description": "600+ free handpicked design resources for Sketch, Figma, Webflow, Adobe XD, InVision Studio, Photoshop, Illustrator CC.",
     "link": "https://www.uistore.design/",
@@ -1061,6 +1061,70 @@
     "title": "Zwicon",
     "description": "Handcrafted iconset for your next project",
     "link": "https://www.zwicon.com/",
+    "license": "Free"
+  },
+  {
+    "id": 134,
+    "category": "Icons",
+    "title": "Lucide",
+    "description": "Beautiful & consistent icon toolkit made by the community. Open-source project and a fork of Feather Icons.",
+    "link": "https://lucide.dev/icons/",
+    "license": "Free"
+  },
+  {
+    "id": 135,
+    "category": "Tools",
+    "title": "Uiverse",
+    "description": "Library of free and customizable UI elements made with CSS or Tailwind. It's all open-source, and it's all free.",
+    "link": "https://uiverse.io/",
+    "license": "Free"
+  },
+  {
+    "id": 136,
+    "category": "Icons",
+    "title": "Iconoir",
+    "description": "A high-quality selection of free icons. Available in SVG, Font, React, React Native, Flutter, Figma and Framer.",
+    "link": "https://iconoir.com/?ref=uispace",
+    "license": "Free"
+  },
+  {
+    "id": 137,
+    "category": "Web App",
+    "title": "Dopeui",
+    "description": "Design templates for Web Designers and Developers.",
+    "link": "https://dopeui.co/",
+    "license": "Freemium and Premium"
+  },
+  {
+    "id": 138,
+    "category": "Web App",
+    "title": "Freebiesui",
+    "description": "Download for free great ui design template for Photoshop, Sketch, Adobe XD and Figma. ",
+    "link": "https://freebiesui.com/",
+    "license": "Free"
+  },
+  {
+    "id": 139,
+    "category": "Web App",
+    "title": "Bloouikit",
+    "description": "All in one open source wireframe kit for quick design and prototyping your idea. Its library contains more than 250+ components supporting darkmode and 150+ ready to use mobile screens.",
+    "link": "https://bloouikit.com/",
+    "license": "Free"
+  },
+  {
+    "id": 140,
+    "category": "Web App",
+    "title": "UI Bundle",
+    "description": "Get more design inspiration and use your projects.",
+    "link": "https://uibundle.com/",
+    "license": "Freemium and Premium"
+  },
+  {
+    "id": 141,
+    "category": "Mobile App",
+    "title": "UI Garage",
+    "description": "Daily handpicked UI inspiration & patterns. Find specific design inspiration for web, mobile and tablet",
+    "link": "https://uigarage.net/",
     "license": "Free"
   }
 ]
