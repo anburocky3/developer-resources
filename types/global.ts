@@ -6,7 +6,7 @@ export interface Idea {
   difficulty: string
   time_taken: number
   source?: string
-  link?: string
+  link?: string[]
 }
 
 // Github contributors

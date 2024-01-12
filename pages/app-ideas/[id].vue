@@ -43,10 +43,12 @@ useHead({
           >
             Link:
             <a
-              :href="idea.link"
+              :href="link"
               class="ml-2 text-blue-500 hover:text-blue-600"
               target="_blank"
-              >{{ idea.link }}</a
+              v-for="link in idea.link"
+              :key="`link${link}`"
+              >{{ link }}</a
             >
           </div>
           <div

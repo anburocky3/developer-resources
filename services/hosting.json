@@ -30,5 +30,13 @@
     "description": "Build, deploy, and scale apps quickly using a simple, fully-managed solution. We’ll handle the infrastructure, app runtimes, and dependencies so you can focus on your code and launch your app efficiently.",
     "link": "https://www.digitalocean.com/products/app-platform",
     "license": "Free"
+  },
+  {
+    "id": 5,
+    "category": "JS/NodeJS",
+    "title": "Render.com",
+    "description": "Build, deploy, and scale your apps with unparalleled ease – from your first user to your billionth.",
+    "link": "https://render.com/",
+    "license": "Freemium"
   }
 ]

@@ -6,7 +6,7 @@
     "technology": ["PHP", "Javascript", "Python"],
     "difficulty": "easy",
     "time_taken": 60,
-    "source": "https://github.com/yogesh7401/calculator"
+    "source": ["https://github.com/yogesh7401/calculator"]
   },
   {
     "id": 2,
@@ -105,7 +105,7 @@
     "technology": ["PHP", "Javascript"],
     "difficulty": "easy",
     "time_taken": 60,
-    "source": "https://github.com/tutorialzine/jQuery-Countdown"
+    "source": ["https://github.com/tutorialzine/jQuery-Countdown"]
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "technology": ["PHP", "Javascript"],
     "difficulty": "medium",
     "time_taken": 300,
-    "source": "https://github.com/tutorialzine/jQuery-Countdown"
+    "source": ["https://github.com/tutorialzine/jQuery-Countdown"]
   },
   {
     "id": 14,
@@ -160,7 +160,7 @@
     "difficulty": "easy",
     "time_taken": 30,
     "source": "",
-    "link": "https://i.ytimg.com/vi/[VIDEO_ID]/maxresdefault.jpg"
+    "link": ["https://i.ytimg.com/vi/[VIDEO_ID]/maxresdefault.jpg"]
   },
   {
     "id": 19,
@@ -170,17 +170,17 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://ipv4.icanhazip.com/"
+    "link": ["https://ipv4.icanhazip.com/", "https://httpbin.org/ip"]
   },
   {
     "id": 20,
-    "title": "English to Tamil Translater",
-    "description": "Build a form with necessary fields and after entering input field, it should translate your english word into tamil word. API: https://transservice.ecinet.in/api/Transliteration/GetSuggestions?transliteration=NAME&itext=ANBUSELVAN&locale=tm_in",
-    "technology": ["API", "Javascript"],
+    "title": "Dummy JSON",
+    "description": "Get dummy/fake JSON data to use as placeholder in development or in prototype testing.",
+    "technology": ["PHP", "Javascript", "API"],
     "difficulty": "easy",
-    "time_taken": 10,
+    "time_taken": 20,
     "source": "",
-    "link": "https://transservice.ecinet.in/api/Transliteration/GetSuggestions?transliteration=NAME&itext=ANBUSELVAN&locale=tm_in"
+    "link": ["https://dummyjson.com/docs/products"]
   },
   {
     "id": 21,
@@ -190,7 +190,7 @@
     "difficulty": "easy",
     "time_taken": 10,
     "source": "",
-    "link": "https://dictionaryapi.dev"
+    "link": ["https://dictionaryapi.dev"]
   },
   {
     "id": 22,
@@ -200,7 +200,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://docs.github.com/en/rest/users/users#get-a-user"
+    "link": ["https://docs.github.com/en/rest/users/users#get-a-user"]
   },
   {
     "id": 23,
@@ -220,7 +220,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": ""
+    "link": ["https://api.adviceslip.com/"]
   },
   {
     "id": 25,
@@ -230,7 +230,10 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://api.country.is, https://get.geojs.io/v1/ip/country.json"
+    "link": [
+      "https://api.country.is",
+      "https://get.geojs.io/v1/ip/country.json"
+    ]
   },
   {
     "id": 26,
@@ -240,7 +243,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://restcountries.com/"
+    "link": ["https://restcountries.com/"]
   },
   {
     "id": 27,
@@ -250,7 +253,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://opentdb.com/api.php?amount=10&type=multiple"
+    "link": ["https://opentdb.com/api.php?amount=10&type=multiple"]
   },
   {
     "id": 28,
@@ -260,7 +263,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://official-joke-api.appspot.com/random_joke"
+    "link": ["https://official-joke-api.appspot.com/random_joke"]
   },
   {
     "id": 29,
@@ -270,7 +273,7 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://v2.jokeapi.dev/joke/Programming"
+    "link": ["https://v2.jokeapi.dev/joke/Programming"]
   },
   {
     "id": 30,
@@ -280,6 +283,28 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": "https://api.dominos.co.in/locator-service/ve2/cities/CHENNAI/stores"
+    "link": [
+      "https://api.dominos.co.in/locator-service/ve2/cities/CHENNAI/stores"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Test your HTTP Request (httpbin.org)",
+    "description": "A simple HTTP Request & Response Service. Use it for testing.",
+    "technology": ["PHP", "Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": ["https://httpbin.org/"]
+  },
+  {
+    "id": 32,
+    "title": "Web Scraping Sandbox",
+    "description": "A simple web scraping sandbox. Use it for testing.",
+    "technology": ["PHP", "Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": ["https://toscrape.com/"]
   }
 ]
