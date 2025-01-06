@@ -41,7 +41,7 @@ const addToFavourite = (id: number) => {
         <div class="text-sm uppercase">{{ idea.difficulty }}</div>
       </div>
       <div
-        class="flex flex-col items-center justify-between gap-5 p-6 sm:flex-row"
+        class="flex-1 flex flex-col items-center justify-between gap-5 p-6 sm:flex-row"
       >
         <div class="flex-1 space-y-4">
           <div class="space-y-2">

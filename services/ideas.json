@@ -170,7 +170,11 @@
     "difficulty": "easy",
     "time_taken": 20,
     "source": "",
-    "link": ["https://ipv4.icanhazip.com/", "https://httpbin.org/ip"]
+    "link": [
+      "https://ipv4.icanhazip.com/",
+      "https://httpbin.org/ip",
+      "https://api.ipify.org/?format=json"
+    ]
   },
   {
     "id": 20,
@@ -306,5 +310,75 @@
     "time_taken": 20,
     "source": "",
     "link": ["https://toscrape.com/"]
+  },
+  {
+    "id": 33,
+    "title": "Random Quotes API",
+    "description": "Get quotes from these api. List them and get familiar with DOM",
+    "technology": ["PHP", "Javascript", "API"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": ["https://api.quotable.io"]
+  },
+  {
+    "id": 34,
+    "title": "Gradient Color Generator",
+    "description": "Create a UI which should generate gradient color on demand.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 20,
+    "source": "",
+    "link": []
+  },
+  {
+    "id": 35,
+    "title": "Get gender based on their name",
+    "description": "Predict the gender of a person based on their name.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://api.genderize.io?name=anbu"]
+  },
+  {
+    "id": 36,
+    "title": "Get nationality based on their name",
+    "description": "Predict the nationality of a person based on their name.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://api.nationalize.io?name=anbu"]
+  },
+  {
+    "id": 36,
+    "title": "Get IP's Geo, Company info",
+    "description": "Get information about a specified IP address, such as geological info, company, and carrier name.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://ipinfo.io/49.204.113.234/geo"]
+  },
+  {
+    "id": 37,
+    "title": "Get random fake user",
+    "description": "Get information about a random fake user, including gender, name, email, address, etc.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://randomuser.me/api/"]
+  },
+  {
+    "id": 38,
+    "title": "Get University list",
+    "description": "Get a list of universities in a specified country.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["http://universities.hipolabs.com/search?country=India"]
   }
 ]
