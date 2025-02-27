@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, reactive, onMounted } from 'vue'
+import { computed, reactive, onMounted, ref } from 'vue'
 import { useStore } from '@/stores'
 import ideasList from '@/services/ideas.json'
 import { hourFormat } from '@/utils/global'
-import type {  Idea } from '~~/types/global'
+import type {  Idea } from '~/types/global'
+import { useState } from 'nuxt/app'
 
 const ideas = useState(
   'Ideas',
@@ -89,6 +90,9 @@ const filterIdeas = () => {
   let diffRes: Idea[] = []
   let durRes: Idea[] = []
   let srcRes: Idea[] = []
+
+  console.log('ideasList', ideasList);
+  
   if (techFilters.value.length > 0) {
     techRes = ideasList.filter((i) => {
       return (

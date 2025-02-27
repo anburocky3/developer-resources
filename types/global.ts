@@ -5,8 +5,8 @@ export interface Idea {
   technology: string[]
   difficulty: string
   time_taken: number
-  source?: string
-  link?: string[]
+  source?: string | string[]
+  link?: string | string[]
 }
 
 // Github contributors

@@ -6,6 +6,7 @@ import path from 'path'
 export default defineNuxtConfig({
   pages: true,
   css: ['~/assets/css/tailwind.css'],
+
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
@@ -13,14 +14,17 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxt/image'
   ],
+
   app: {
     head: {
       link: [{ rel: 'icon', href: '/favicon.ico' }]
     }
   },
+
   colorMode: {
     classSuffix: ''
   },
+
   // build: {
   //   transpile: ['vue-i18n']
   // },
@@ -34,10 +38,13 @@ export default defineNuxtConfig({
       // })
     ]
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     }
-  }
+  },
+
+  compatibilityDate: '2025-02-27'
 })

@@ -7,7 +7,6 @@ import { isRouteActive } from '~/utils/global'
 
 const i18n = useI18n()
 // const i18n = {}
-console.log(i18n)
 
 const globalStore = useStore()
 

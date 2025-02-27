@@ -380,5 +380,75 @@
     "time_taken": 10,
     "source": "",
     "link": ["http://universities.hipolabs.com/search?country=India"]
+  },
+  {
+    "id": 39,
+    "title": "Open Library API",
+    "description": "Get a list of book covers and related data.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://openlibrary.org/developers/api"]
+  },
+  {
+    "id": 40,
+    "title": "Quran API",
+    "description": "Free Quran API Service with 90+ different languages and 400+ translations.",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://github.com/fawazahmed0/quran-api?tab=readme-ov-file#readme"]
+  },
+  {
+    "id": 41,
+    "title": "Thirukkural API",
+    "description": "1330 Thirukkural poems and explanation in Tamil and English",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://api-thirukkural.web.app/"]
+  },
+  {
+    "id": 42,
+    "title": "TMDb API - Movies",
+    "description": "Community-based movie data",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://www.themoviedb.org/documentation/api"]
+  },
+  {
+    "id": 43,
+    "title": "OMDb API - Movies",
+    "description": " Movie information",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["http://www.omdbapi.com"]
+  },
+  {
+    "id": 44,
+    "title": "What's on the menu? API",
+    "description": "NYPL human-transcribed historical menu collection",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["http://nypl.github.io/menus-api/"]
+  },
+  {
+    "id": 45,
+    "title": "TheMealDB API",
+    "description": "Recipes and Food product",
+    "technology": ["Javascript"],
+    "difficulty": "easy",
+    "time_taken": 10,
+    "source": "",
+    "link": ["https://www.themealdb.com/api.php"]
   }
 ]

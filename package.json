@@ -23,7 +23,7 @@
     "@vueuse/nuxt": "^10.7.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
-    "nuxt": "^3.9.0",
+    "nuxt": "^3.15.4",
     "pinia": "^2.1.7",
     "postcss": "^8.4.33",
     "prettier": "^3.1.1",
